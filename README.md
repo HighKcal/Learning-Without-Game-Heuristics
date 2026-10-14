@@ -80,16 +80,29 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/play_agent.py --checkpoint
 
 사용자는 pretrained 모델 없이 무작위 초기화에서 개인 PC로 DDQN을 학습했고 replay를 게임 환경에서 생성했다. 코드·payload가 이 설명에 부합하지만 과거 초기 weights·완전한 실행 provenance가 모두 저장된 것은 아니다.
 
-| 실험 | Seed / 학습 budget | 배포 후보 |
+| 실험 | Seed / 학습 budget | 공개 모델 |
 | --- | --- | --- |
 | Geometric baseline | 123 / 100K | final 1개 |
 | Geometric penalty −0.20 | 42 / 500K | final 1개 |
 | Oracle | 123 / 500K | periodic500K, final 2개 |
 | Oracle | 42 / 2M | periodic300K/500K/1M/2M, final 5개 |
 
-**9개를 개별 GitHub Release Asset으로 배포한다.** Source 공개 후 모델 Release 업로드·검증을 진행 중이며, 실제 Release가 게시되면 다운로드 링크를 추가한다. 원 bytes·역할·SHA256을 유지한다. [모델 목록](docs/models.md) · [모델별 설정·평가·한계](docs/MODEL_CARDS.md) · [Asset 이름/배치 경로/해시](MODEL_RELEASE_MANIFEST.json). 같은 budget의 final과 periodic은 다른 파일로 구분한다.
+**9개를 개별 GitHub Release Asset으로 배포한다.** [research-v1.0.0 Release](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에 모델9개와MIT·해시·한국어model cards를게시했다. 원 bytes·역할·SHA256을 유지한다. [모델 목록](docs/models.md) · [모델별 설정·평가·한계](docs/MODEL_CARDS.md) · [Asset 이름/배치 경로/해시](MODEL_RELEASE_MANIFEST.json). 같은 budget의 final과 periodic은 다른 파일로 구분한다.
 
-모델 Release 게시 후 신뢰된 공식 출처에서 9개 `.pt`를 한 다운로드 폴더에 모으고 소스 root에서 설치한다. helper는 manifest와 Registry의 목록·role·경로·size·SHA256을 모두 확인한 후 새 artifact root에 복사한다.
+| 원본 모델 Asset | 다운로드 |
+| --- | --- |
+| `Temeong-geometric-baseline-seed123-100k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-baseline-seed123-100k-final.pt) |
+| `Temeong-geometric-penalty020-seed42-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-penalty020-seed42-500k-final.pt) |
+| `Temeong-oracle_mask-seed123-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-final.pt) |
+| `Temeong-oracle_mask-seed123-500k-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-periodic-500000.pt) |
+| `Temeong-oracle_mask-seed42-2m-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-final.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-1000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-2000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-300000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-300000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-500000.pt) |
+
+
+공식 Release에서9개 `.pt`를 한 다운로드 폴더에 모으고 소스 root에서 설치한다. helper는 manifest와 Registry의 목록·role·경로·size·SHA256을 모두 확인한 후 새 artifact root에 복사한다.
 
 ```bash
 python -B scripts/install_model_assets.py --asset-dir ../downloaded-models --artifact-root ../model-artifacts

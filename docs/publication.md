@@ -9,3 +9,5 @@
 Release에는원본9개와SHA256SUMS·MODEL_RELEASE_MANIFEST.json·MODEL_LICENSE.txt·한국어MODEL_CARDS.md를게시한다. Source공개후실제모델업로드·해시검증이완료된Release만downloadlink로안내한다. 실패한업로드를삭제·강제이력변경으로숨기지않고상태를기록한다.
 
 사용방법은 [모델배포가이드](MODEL_RELEASE_GUIDE.md)·[보안안내](CHECKPOINT_SECURITY.md)·[WSL실행](WSL_TRAINING.md)에있다. 안정적인실행가능성학습은미해결이며Oraclemask효과와Decision학습성과를구분한다. [GitHubRelease공식안내](https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases)
+
+공개Repository: [Learning Without Game Heuristics](https://github.com/HighKcal/Learning-Without-Game-Heuristics). 실제Release: [research-v1.0.0](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0), 원본9개+companion4개게시완료. 원격다운로드·Clone검증결과는최종Phase5보고서에기록한다.

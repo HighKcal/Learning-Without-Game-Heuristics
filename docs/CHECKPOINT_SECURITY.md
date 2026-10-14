@@ -1,6 +1,6 @@
 # Checkpoint 신뢰 출처와 로딩 보안
 
-공식HighKcal/Learning-Without-Game-Heuristics의모델Release9개와동일한manifest·SHA256목록을사용한다. Source공개후모델Release를업로드·검증중이며게시완료후실제링크를제공한다. 파일 이름·크기가 같다는 이유만으로 신뢰하지 않는다. SHA256 일치는 파일 동일성 검사이며 manifest까지 공격자가 바꿀 수 있으면 발행자 인증을 제공하지 않는다. 최종 public commit/tag·권리자 공개 목록에서 hash를 교차 확인한다.
+공식HighKcal/Learning-Without-Game-Heuristics의모델Release9개와동일한manifest·SHA256목록을사용한다. 현재공개모델은 [research-v1.0.0](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에서받는다. 파일 이름·크기가 같다는 이유만으로 신뢰하지 않는다. SHA256 일치는 파일 동일성 검사이며 manifest까지 공격자가 바꿀 수 있으면 발행자 인증을 제공하지 않는다. 최종 public commit/tag·권리자 공개 목록에서 hash를 교차 확인한다.
 
 이 모델9개는 Registry와 기존 원본의 hash를 확인한 후 ZIP inventory·pickle opcode/GLOBAL/문자열을 정적으로 검사했다. `get_unsafe_globals_in_checkpoint`의 미허용 GLOBAL은0이었다. 다음으로 신뢰된 원본의 bytes에만 `torch.load(..., weights_only=True, map_location='cpu', mmap=True)` 제한 로딩을 적용하고 plain dict/list/tuple/scalar/Tensor 구조·shape·finite·문자열을 검사했다. 일반 `pickle.load`, `weights_only=False`, custom `safe_globals` 추가는 사용하지 않았다. Registry와 기존 평가/추론 loader도 `weights_only=True`를 유지한다.
 

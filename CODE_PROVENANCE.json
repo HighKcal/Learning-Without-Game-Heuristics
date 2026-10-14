@@ -41,7 +41,7 @@
     },
     {
       "path": "docs/CHECKPOINT_SECURITY.md",
-      "sha256": "92c4c3a28f862e845a4b6b6cb8060f217110a50b4749d39289e9d16dd11f67ac",
+      "sha256": "e815c778c0ab782f81397aee401d09e0cec326720f110f247ec8562fdb3ea5a6",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
@@ -55,7 +55,7 @@
     },
     {
       "path": "docs/evidence.md",
-      "sha256": "c9c3310b8fa8a07ba0f2cc5c5e98e94655b8edffe745da4f4f3c160c8f40671c",
+      "sha256": "3ae1eea852a8d5851d53cf5ba2ffdd371834d3322031df239b4ff2d5cbd1b928",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
@@ -128,7 +128,7 @@
       "category": "phase4_5_documentation_or_audit_metadata",
       "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
-      "sha256": "7a6b0c20ea4cd1f7f15821d76cf53d25fbdffeed011dcb22cbd690d1d4b2f0a4"
+      "sha256": "06869e285f4c89bfb5c2106d2a0d067f9d70ca80b384778ff95b0f51ec46d663"
     },
     {
       "path": "docs/models.md",
@@ -160,7 +160,7 @@
     },
     {
       "path": "docs/publication.md",
-      "sha256": "e50a042008e86067cc2dfeea3ec8277ed16e7ade092204e3e1f47840017fd6a4",
+      "sha256": "ad4f4314ed90a13aeeb45e117a0241c261184f88d8c63f3706d83cffecef256f",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
@@ -363,7 +363,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "d86b910894c7d41a36358971025ec5fb9ac4e2da7e9981aa6f4508f5392ac09d",
+      "sha256": "03f268a48eb04482025d097d3b38b201889d173a9868fa51f085a29e10d9e333",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"

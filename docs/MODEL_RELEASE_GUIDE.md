@@ -1,6 +1,6 @@
 # 모델 Release Asset 구성과 사용 방법
 
-Source repository와research-v1.0.0게시를사용자가승인했다.9개원본모델은별도ReleaseAsset으로배포한다. Source공개후모델업로드·검증을진행중이며실제Release가게시되면여기에다운로드위치를추가한다. 기존 private Git 이력이나 source Git에 모델 binary를 추가하지 않는다.
+Source repository와research-v1.0.0게시를사용자가승인했다.9개원본모델은별도ReleaseAsset으로배포한다. 실제공개Release는 [research-v1.0.0](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)다.9개모델과4개companion파일이게시됐다. 기존 private Git 이력이나 source Git에 모델 binary를 추가하지 않는다.
 
 ## 1. 구성
 
@@ -44,3 +44,24 @@ Geometric checkpoint의평가는`--reachability-mask geometric`을사용한다. 
 9개원본→고유Asset이름의별도폴더→WSL다운로드모사폴더→helper의새Registryroot순으로byte복사했다. 각단계SHA256/size가일치했다. 후보code로9개×256상태평가와9개×2지원모드추론,hash불변·optimizer/replayupdate0을확인했다. 변조파일·기존root·manifest/Registry불일치거부검사도통과했다. Native19hash계약은유지했다.
 
 Rawlogs와내부실제경로는비공개감사에있고공개결과는 [PHASE4_5_RELEASE_VALIDATION.json](results/PHASE4_5_RELEASE_VALIDATION.json)이다. 같은WSLhost와Phase4의lock설치CPUvenv를재사용했으며새OS/장기훈련/모든seed평가를인증하지않는다. [보안](CHECKPOINT_SECURITY.md)·[모델카드](MODEL_CARDS.md)·[승인목록](RELEASE_APPROVALS.md)
+
+
+## 실제 Release에서 내려받기
+
+아래명령은현재게시된13개Asset URL 중9개모델과SHA256SUMS만다운로드한다. 기존폴더를덮어쓰지않도록새디렉터리를사용한다. Release의MODEL_LICENSE.txt·manifest·MODEL_CARDS.md도함께읽는다.
+
+```bash
+mkdir ../downloaded-models
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-baseline-seed123-100k-final.pt' --output '../downloaded-models/Temeong-geometric-baseline-seed123-100k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-penalty020-seed42-500k-final.pt' --output '../downloaded-models/Temeong-geometric-penalty020-seed42-500k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-periodic-500000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-300000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-300000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-500000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/SHA256SUMS' --output '../downloaded-models/SHA256SUMS'
+(cd ../downloaded-models && sha256sum -c SHA256SUMS)
+python -B scripts/install_model_assets.py --asset-dir ../downloaded-models --artifact-root ../model-artifacts
+```
