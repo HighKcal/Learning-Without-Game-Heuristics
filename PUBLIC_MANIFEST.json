@@ -14,8 +14,8 @@
   "entries": [
     {
       "path": ".gitattributes",
-      "bytes": 365,
-      "sha256": "34909e8ebfa88db0511b98bd090ef4d75919d90d946839e93b20625bc99d4332",
+      "bytes": 541,
+      "sha256": "0febee68c101acc3a77f18ce3bbbf6e0ec0457ccbfc13a9fd1a5802835c89315",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "34909e8ebfa88db0511b98bd090ef4d75919d90d946839e93b20625bc99d4332",
       "byte_identical_to_candidate": true
@@ -31,7 +31,7 @@
     {
       "path": "CODE_PROVENANCE.json",
       "bytes": 79229,
-      "sha256": "46656440636bb2562ca11b59228778986acdac61b4d774b61a435172ab4a4fc7",
+      "sha256": "5f59aea5ad37aff3efa19b75bf18f8254c61bc116d639c9000d10d401acb3d4a",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "9d488dfdf96c6c1632e1ba8c8e5eaf4645b22f22ad054bd58fa7854e4f7c06e7",
       "byte_identical_to_candidate": false

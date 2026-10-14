@@ -11,3 +11,13 @@ vendor/native_tetris_031/upstream.patch -whitespace
 requirements/** -text
 requirements-linux.txt -text
 docs/WSL_*.md -text
+
+# Publication manifest hashes must survive Windows/Linux checkouts.
+*.json -text
+*.jsonl -text
+*.csv -text
+*.txt -text
+.gitattributes -text
+.gitignore -text
+LICENSE -text
+pytest.ini -text

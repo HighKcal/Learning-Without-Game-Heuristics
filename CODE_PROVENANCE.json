@@ -6,7 +6,7 @@
   "records": [
     {
       "path": ".gitattributes",
-      "sha256": "34909e8ebfa88db0511b98bd090ef4d75919d90d946839e93b20625bc99d4332",
+      "sha256": "0febee68c101acc3a77f18ce3bbbf6e0ec0457ccbfc13a9fd1a5802835c89315",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
