@@ -1,0 +1,13 @@
+# Preserve validated source bytes despite host core.autocrlf settings.
+src/** -text
+scripts/** -text
+tests/** -text
+experiments/** -text
+evaluation/fixed_eval_final_v1/** -text
+*.md text eol=lf
+
+vendor/native_tetris_031/** -text
+vendor/native_tetris_031/upstream.patch -whitespace
+requirements/** -text
+requirements-linux.txt -text
+docs/WSL_*.md -text

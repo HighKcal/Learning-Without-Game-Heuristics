@@ -1,0 +1,4792 @@
+{
+  "schema_version": 3,
+  "experiments": 4,
+  "checkpoints": 9,
+  "checkpoints_metadata": [
+    {
+      "experiment_id": "geometric.baseline.seed123.100k",
+      "artifact_id": "final",
+      "training_seed": 123,
+      "decision_budget": 100000,
+      "checkpoint_decisions": 100000,
+      "role": "final",
+      "relative_path": "runs/geometric/baseline/seed_123/100k/checkpoint_final.pt",
+      "filename": "checkpoint_final.pt",
+      "bytes": 5321161,
+      "sha256": "c882fa1bd96f7493cb1bf9ef0149b3b126d524d777ac22396bcf59b8184321b9",
+      "training": {
+        "decision_budget": 100000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 123,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "reachability_mask_mode": "geometric",
+        "epsilon_decay_override": 38000
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_geometric",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 720,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "da9ba116716684266e545e6f233fabea039d6705244185299fbf289db56a5380"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 728,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "48c2483f135ab987328dd7d7815ccf99986c94de0d89269da1a5e7d0ead4725c"
+            }
+          ]
+        },
+        "gameplay": null,
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 0.8125,
+          "greedy_first_choice_unreachable_rate": 0.1875,
+          "selected_physical_u_count": 48,
+          "reachability_mask_mode": "geometric",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 0
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-geometric-baseline-seed123-100k-final.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 46,
+          "builtins.str": 19,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 38,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "8e11ada5179dbc8912145e10546f206dfe8750bd00f814c6c23768c2e7d463ba"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "86d74516d75cafb9c08969a00cf33b59933bec096897b15552ea5b60e6a40b57"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "bde1166ba628fc55bc9ea01008ca3d31127edcacdab76a0a0983d78eb2fa7a52"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "6233d9375c26e39f250ebeeed4c0f25038500e608352bd970dddc85ce90ba8f8"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "58966c7f5de711da445cdc58710b5b028165c30cc36b550e57dcd5e8ec770f81"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "17b28f6ef3089cd2bcf88361a9f8b0ee2640513dbd6c604b27f7d9afe171e124"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "31bee805dbf8c825dc523aebd09f29ac50a93711eb2f90f3446cfeb9ff5938f3"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "1b530b646d7883c43db4c87fee5834ebaa41b7d0373bfd0209c9b9938972d3e5"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "acb19b9d0947ac47ec39fd6ff5f14d18ff9cf4cfe98f13f76390d7c710c09100"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "769f97106b8611f7af75a2a6577d43a298941435cf03843e3dc1da8f12b6fb19"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "afc21bb4d69f888c2a0227d05420c82c347739f32f93e1eee3fa2ef4e1d3f40c"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "0fb096bd4e3b633bc24dc965478160b4df35c53a9cea94ccc31846e669e65a9b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "3d108cb860f28da3572589b42e5fc1d4c6ac1b52385490984e9d40ba8559b759"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "f2ddf10d5330d1075dddbca1ff59f73b43c1de7f4b885d54fb10777197504137"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "947eb968911b990305c9180977f58e50c4cd36e9af02773867cacf5516462174"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b675ef0c3db02b12c867d6a2283875455825bf8d2bb1b1ee57b5ce23dd7da207"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "83d98b64e585f7478cac567b98df428683b9f5521ed2d4f85eec72bfd7ab835e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "a52323eaa7859c05bab5f05cf4330dd5b7a353acb7016b0a9f90b47337a0fe6e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "6c8a1c73b5ca4b449bebb79b87bfe524642060dd73eabfa62be7e20bde294696"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "6184641d7ec25ba95cb546b515f19b88be01431fba97fdaa7a8123ce641721bb"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "1f0607be56550673e9e0a14dec47157b9242043c42f9d5812f651caf81ccfd07"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "01a969a6ae29697248bd7ca63da2896f8f4f1305f5d30d2e04d7e79fc120474b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "5d03b7528d811e4811543787a6c8b2c3dc27b3d3696ca5f861bfdb1b37a9b23e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "e42381fc4733c332bca15e2611dab766755cacd07dd095a554b99076aed9b924"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "9b565b292b1e1e0abc496960f20ba61018ec78bd657e6d033c733a2e71f994bd"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 100000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 123,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "reachability_mask_mode": "geometric"
+        },
+        "decision_count": 100000,
+        "stored_experiences": 100000,
+        "gradient_updates": 95001,
+        "target_sync_count": 19,
+        "saved_at": "2026-10-04T11:08:07.293399+00:00",
+        "status": "completed",
+        "exact_resume_supported": false,
+        "string_count_static": 193,
+        "string_count_structured": 161,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-geometric-baseline-seed123-100k-final.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/geometric/baseline/seed_123/100k/checkpoint_final.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 0.8125,
+          "greedy_first_choice_unreachable_rate": 0.1875,
+          "selected_physical_u_count": 48,
+          "reachability_mask_mode": "geometric",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 0
+        },
+        "frozen_registry_modes_verified": [
+          "research_geometric_top1",
+          "main_geometric_play_fallback"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "geometric.penalty020.seed42.500k",
+      "artifact_id": "final",
+      "training_seed": 42,
+      "decision_budget": 500000,
+      "checkpoint_decisions": 500000,
+      "role": "final",
+      "relative_path": "runs/geometric/penalty_020/seed_42/500k/checkpoint_final.pt",
+      "filename": "checkpoint_final.pt",
+      "bytes": 5321225,
+      "sha256": "8124cb9a9ebd54461967213c1b40744f399d8f30ca4521470a3f4fc563b4d0ff",
+      "training": {
+        "decision_budget": 500000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.2,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "geometric"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_geometric",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 681,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "68b32c591000c0508bdffd9de8dc794823a6ec5fc4a580808f0ef36f7f9b4006"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 681,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "c3588b9ec2ece9e108ab0b90ffd3527231c5225c164fd8be66b088b4d0631d0c"
+            }
+          ]
+        },
+        "gameplay": null,
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 0.9140625,
+          "greedy_first_choice_unreachable_rate": 0.0859375,
+          "selected_physical_u_count": 22,
+          "reachability_mask_mode": "geometric",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 0
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-geometric-penalty020-seed42-500k-final.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 47,
+          "builtins.str": 19,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 39,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "07337157750f299b335e376cc37289f9f34834b87cd8a08e1b460fa089f3bb5d"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "7553307af2637891f9ba668b5829b0cb8c9c7d035bb898ebdeb55aff8b3966dc"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "c9d00abbbdf0464a9ea4bc7be7528b7cd0dc7a187acaf033203e6d5f6d5fe79b"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "04982d32b50d608617e740f05fa8006bca548789e0a72d633615ed5a17ce37e3"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "5d6c4925dbd5abbd60724e00461fb151ffecd75932ab78ef5ee072133caacdd1"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "0a4d375847c18d377331347c7827c56e013cd6df543bb84f59898ff6bc321d5b"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "08d10d915a3c52909e849fde1d18afdfd66cb45850113d7bb11eede98be2cbd7"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "67c552ab82053db4e3de650df6aeb51d0a5134ad8676d3ce50af55467cc2c2ed"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "094d49cb71cc32796d15c735d06fc883a8c2cce8b1e9d78d3e666beaabe49c6e"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "aac8b6c7e27e881f10942df9c9f0f11331d5de8aea25105485b07b48986877fc"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "e893051365992e15c86e58b2dacad62b842641edd4f39d7ac7651cf0aa80a01f"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "239f0344a7d9953a1452345216a99bf5328bf288ee655c599a75e8c219b5c6b8"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "aecc4fc4fcb2429792ada718c80e28250416f166cce2a3749ad0001b5d092c4a"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "14fb4f4152d615f02fb70bd70731259ac5fa99143a889b25553369c3ef81a31e"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "fe0ead350569d1ade7e1b9dcb5149d183b74aca4025fc8174549144e1e9c1463"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b5f0de9fe788ef1977a35f49eaa72a7c69aaac0c42d6267d365bdaca06fa0be2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "968ce851a4630cf54723eff18194a5a29dc84022005fe61cdcdbfc0e70e20b07"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b0c88e08e9ca42e24d77205e874926a7e74f649b4405099e8841b50c58a5c7a6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "fca98d4c956aa8a594f6911899eda489452307184034a20f144a5ead79da93c5"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "9ff210282c4febb43a69027e2b1f8f9d5ed4cdfe46915e66dbf42350a9cba8d6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "6dde2f5791791e4c8e97e8e128374d10eb5b0a25d7442ca4f66aadf75f9d83c6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "fcaf106c17a7498554131466d932bb27e4ac9081c6ecb5abe95b0936a7992bbb"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "77636e9e893bb4443b0c6cd8ddf258697c4f7ef2278f4a7f77534d062570f487"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "735d6788b66edebefed8fb37370ccd284e21b19aaf0892591c505626396cc737"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 500000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.2,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "geometric"
+        },
+        "decision_count": 500000,
+        "stored_experiences": 500000,
+        "gradient_updates": 495001,
+        "target_sync_count": 99,
+        "saved_at": "2026-10-04T22:24:15.831595+00:00",
+        "status": "completed",
+        "exact_resume_supported": false,
+        "string_count_static": 195,
+        "string_count_structured": 163,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-geometric-penalty020-seed42-500k-final.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/geometric/penalty_020/seed_42/500k/checkpoint_final.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 0.9140625,
+          "greedy_first_choice_unreachable_rate": 0.0859375,
+          "selected_physical_u_count": 22,
+          "reachability_mask_mode": "geometric",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 0
+        },
+        "frozen_registry_modes_verified": [
+          "research_geometric_top1",
+          "main_geometric_play_fallback"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed123.500k",
+      "artifact_id": "step_500000",
+      "training_seed": 123,
+      "decision_budget": 500000,
+      "checkpoint_decisions": 500000,
+      "role": "periodic",
+      "relative_path": "runs/oracle_mask/seed_123/500k/checkpoint_000500000.pt",
+      "filename": "checkpoint_000500000.pt",
+      "bytes": 5322057,
+      "sha256": "f27eb283f952a10f80473458d01eb341f051d0358733fe2a7739205b62cade76",
+      "training": {
+        "decision_budget": 500000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 123,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 705,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "952e360bda4b4762f5f156cc4781e53fea0f9145b7f96296ac2c2f8de569933f"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 683,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "ff7f5a35cd63cdfd215db304bb3482bad02fac7031d95dab5d5b1daa6e21b32f"
+            }
+          ]
+        },
+        "gameplay": {
+          "phase": "historical_periodic50K_grid",
+          "episodes": 50,
+          "seed_start": 100000,
+          "epsilon": 0,
+          "lines_per_1000_placements": 54.93827160493827,
+          "lines_per_episode": 1.78,
+          "placements_per_episode": 32.4,
+          "deaths": 50,
+          "source": "docs/results/oracle_seed123_500k_gameplay.csv"
+        },
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed123-500k-periodic-500000.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6dc5bb21dfecfb38c7562816b6c20f4c88ebddbebe42bde3241db356e0c89be4"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "c95db7f7cdb9b6ec91214b020add5ce1782e829f6b6ae4c2ababe7186980d96c"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "7e987e076228e433905bd8435967d62cd8953b1f666a7f1602c2e6060d712cf4"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "a6442facc4fab923392511ba498fbcde12169063901d7d3d469728d3e10db1b3"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "e753f30620221def030d24192db71860d31c7ecb2bc5ac8894e160fe9a63e157"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "b55ea37f240b3ecb1adf6dd6336c23facfbad2042cd59440257a0c1d372cbcab"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6c799f45a83ede7da70f781a4a55d69d3a0b42506408c3a03f5055186e1eb17f"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "85c0e6b90797159dd3c462e62ba83c5fe27f0eaa6055799b8cd313f0cf00ac8c"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "5f52308dca4bed6a24a82b691889aaa7d7ec04b6f4c390ada0fd004058872c11"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "d6d3d19ca58e1d57511d723fde882e4e8f19e0abee05a5092662d8e665a10be4"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "fa74fb71c0774fc8a4ddd083b267b6339827c5907353bad6881c582b59a08959"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "f351940f4ea0ee6900c44ed764b6178362c914658e03b5cc0132aaa0ef7e78fc"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "24b0dc4fcc3e410709c244eefb32064063cae0c8e542daec70772aba136f9e77"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "3fff8203302c0ad675a40c5f1a53bdc9568152d0938a953a3b2e7796ce78c644"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "061e133e637e4b8999462abbbf44a92e9094a601032269df27a968b031c52fa2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "db5f42365fa51bca0f937b2f94f3eaf1627d8387902090bc8dd07586081c1ade"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b6d9c5f671ee2f29992219d83861a7cb80189148c2cfbe0c62d1a08cc025843b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "d09d2f06488b67abb4f6f3d1943c7b1810690a811454dd5b0ade13651dc25a12"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b4c324e480d106cc94cc1a8e084d4599cd931f3a53e08f05e24231cad7d35bf2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "912155b4950c1c098185a4e0a742e51513a68c72538d327bec29a189924f7559"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "edc54f11be9f5e45beae4acee3f1dcc02038bfa06cb6b89a786087c62249a27f"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "c518120b0c2c3a0cf88661d1d10925b665987d3081c1291f141e32d7be9e59e6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "895fa0b500c31624e906bf7a983c82efe0d50f6e39be4ad1536f1d40346095d2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "b5ac58e07a0afa8cbe45649ad2b2140f4bf241ef4805c24e35912a9f9acbe0ad"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 500000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 123,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 500000,
+        "stored_experiences": 500000,
+        "gradient_updates": 495001,
+        "target_sync_count": 99,
+        "saved_at": "2026-10-06T19:10:53.643246+00:00",
+        "status": "running",
+        "exact_resume_supported": false,
+        "string_count_static": 216,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed123-500k-periodic-500000.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_123/500k/checkpoint_000500000.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed123.500k",
+      "artifact_id": "final",
+      "training_seed": 123,
+      "decision_budget": 500000,
+      "checkpoint_decisions": 500000,
+      "role": "final",
+      "relative_path": "runs/oracle_mask/seed_123/500k/checkpoint_final.pt",
+      "filename": "checkpoint_final.pt",
+      "bytes": 5322057,
+      "sha256": "cd4d5d9423a986804acecbe7a7b48ae440db6ada5598d931e82bb680c656f146",
+      "training": {
+        "decision_budget": 500000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 123,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 705,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "952e360bda4b4762f5f156cc4781e53fea0f9145b7f96296ac2c2f8de569933f"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 683,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "ff7f5a35cd63cdfd215db304bb3482bad02fac7031d95dab5d5b1daa6e21b32f"
+            }
+          ]
+        },
+        "gameplay": null,
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed123-500k-final.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6dc5bb21dfecfb38c7562816b6c20f4c88ebddbebe42bde3241db356e0c89be4"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "c95db7f7cdb9b6ec91214b020add5ce1782e829f6b6ae4c2ababe7186980d96c"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "7e987e076228e433905bd8435967d62cd8953b1f666a7f1602c2e6060d712cf4"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "a6442facc4fab923392511ba498fbcde12169063901d7d3d469728d3e10db1b3"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "e753f30620221def030d24192db71860d31c7ecb2bc5ac8894e160fe9a63e157"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "b55ea37f240b3ecb1adf6dd6336c23facfbad2042cd59440257a0c1d372cbcab"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6c799f45a83ede7da70f781a4a55d69d3a0b42506408c3a03f5055186e1eb17f"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "85c0e6b90797159dd3c462e62ba83c5fe27f0eaa6055799b8cd313f0cf00ac8c"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "5f52308dca4bed6a24a82b691889aaa7d7ec04b6f4c390ada0fd004058872c11"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "d6d3d19ca58e1d57511d723fde882e4e8f19e0abee05a5092662d8e665a10be4"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "fa74fb71c0774fc8a4ddd083b267b6339827c5907353bad6881c582b59a08959"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "f351940f4ea0ee6900c44ed764b6178362c914658e03b5cc0132aaa0ef7e78fc"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "24b0dc4fcc3e410709c244eefb32064063cae0c8e542daec70772aba136f9e77"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "3fff8203302c0ad675a40c5f1a53bdc9568152d0938a953a3b2e7796ce78c644"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "061e133e637e4b8999462abbbf44a92e9094a601032269df27a968b031c52fa2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "db5f42365fa51bca0f937b2f94f3eaf1627d8387902090bc8dd07586081c1ade"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b6d9c5f671ee2f29992219d83861a7cb80189148c2cfbe0c62d1a08cc025843b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "d09d2f06488b67abb4f6f3d1943c7b1810690a811454dd5b0ade13651dc25a12"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b4c324e480d106cc94cc1a8e084d4599cd931f3a53e08f05e24231cad7d35bf2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "912155b4950c1c098185a4e0a742e51513a68c72538d327bec29a189924f7559"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "edc54f11be9f5e45beae4acee3f1dcc02038bfa06cb6b89a786087c62249a27f"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "c518120b0c2c3a0cf88661d1d10925b665987d3081c1291f141e32d7be9e59e6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "895fa0b500c31624e906bf7a983c82efe0d50f6e39be4ad1536f1d40346095d2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "b5ac58e07a0afa8cbe45649ad2b2140f4bf241ef4805c24e35912a9f9acbe0ad"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 500000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 123,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 500000,
+        "stored_experiences": 500000,
+        "gradient_updates": 495001,
+        "target_sync_count": 99,
+        "saved_at": "2026-10-06T19:10:53.655246+00:00",
+        "status": "completed",
+        "exact_resume_supported": false,
+        "string_count_static": 216,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed123-500k-final.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_123/500k/checkpoint_final.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_300000",
+      "training_seed": 42,
+      "decision_budget": 2000000,
+      "checkpoint_decisions": 300000,
+      "role": "periodic",
+      "relative_path": "runs/oracle_mask/seed_42/2m/checkpoint_000300000.pt",
+      "filename": "checkpoint_000300000.pt",
+      "bytes": 5322057,
+      "sha256": "8fb9e7e69a2fc9cbe7b2c38a8e5babff72c4c9387ca5fb6757a5fd963cf6e337",
+      "training": {
+        "decision_budget": 2000000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 720,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "42c9b9f8d82ca18221f1507dbe1a7c27413aceff6483c5fefdec13b747116eaa"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 707,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "b210efbdccb45b9a44a0382231248605da0959cb52fa1de48c4a1d83a2eeeff9"
+            }
+          ]
+        },
+        "gameplay": null,
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed42-2m-periodic-300000.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "7547ff15db790c192f5e17b150ce971e95ce3caa9830d3c6ae7d086403d39341"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "dbe906303ccb55fc514c7825b06b3859e47c5b5b3743cb52f15db304193da75c"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "2fde58c94626711a26b9c9e2f1da7bbc143b3d787f1fdb031a56642b984f8eca"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "1aadc4d19c58bddedee78bda8a1cf954e7a5fd18227b33046234ee5e895a2a27"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "48205f0305943aec92be56bb2475be3fc4107d8aa19d65c1eae5c1ec81020ee3"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "7622678bdc8ceddb41731e56984db710ae2b6ed0d33bfaaea3c2c29eff865b68"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "e35c545806f13f75eabb27dd6c1f6dfe5abd7406dd9754622600694312aff93d"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "558fe82f0b44fa277b5269e354fcf8b3342f4afdf765bbfd574c80e5fefa2c5d"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "53108d2f541a2c748acec438ebf67aa3a5d97d08e69e95412633a8c964cb55f0"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "933dc334590ec16e9ded8ec2ee61695ae72c5291459f2ce4fc2cfe30243d7993"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "7add1ea83af08818b80fa93486d6341e865b013fd08a862726133b47ee6087c7"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "8fced5f30c4f4f5329de9c3937e79641fe0dc45983dcdbea406ab91af716479a"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "ac44506cede7e9825dd5e21e5fbbfa9a8bb6cafad10c1acee21dcd203f6e8a05"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "9cb99ec917535bee2b4bb4bea3acc6fbf46f580071a1e7d380cf22a0cc711250"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "d06428c04e1a09a660853603bd32e7262beceea8384ceba9f4a09351af499e2c"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "cda2b5b13ebdc5a87a99b72f81f96259a1da9d95d1aa1a45d383c89545e05d35"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b589dbf0d837b26ae1b47704267da546f63ac167fdbfcda5f6159e44fecb63e5"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "1463d667ebb7563dd1eebbacc25c769a1ce2c5762ab41a19b10ec9d83bb420ef"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "33b48dd757fbe2ec4aa00c1d08ec53af279d4e57c1d2572c506b0e8420493d85"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "07bafd77aa35d1f5552354abfb0e768c41cc39ae3f027689ddfd3c2a6c8435d6"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "f08e4dbcac8d89a75d5e00a22a5a011d7f6c051f18249d452b0d359a5f043946"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "cc4ef8c1266a783b8b609f44bfc3c0f677493d4544ce3738d3439f9da15be947"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "cbce8c42002c49e10dd70df898d1c84a4ca54d743247fffc0177954b44acf188"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "aa854aa8c04e0b1973be921323ad2ff766cd940bbd138b5606e179c94a3d80e0"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "ab5457e374593d1f8d2d809fda367aa613d93a02d8ef2b61841a135b798eac34"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 2000000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 300000,
+        "stored_experiences": 300000,
+        "gradient_updates": 295001,
+        "target_sync_count": 59,
+        "saved_at": "2026-10-06T15:59:29.412304+00:00",
+        "status": "running",
+        "exact_resume_supported": false,
+        "string_count_static": 215,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed42-2m-periodic-300000.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_42/2m/checkpoint_000300000.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_500000",
+      "training_seed": 42,
+      "decision_budget": 2000000,
+      "checkpoint_decisions": 500000,
+      "role": "periodic",
+      "relative_path": "runs/oracle_mask/seed_42/2m/checkpoint_000500000.pt",
+      "filename": "checkpoint_000500000.pt",
+      "bytes": 5322057,
+      "sha256": "f0de04cab322f7670512f8004505c36c5fe98839f79438b8002d1b6131d41ed9",
+      "training": {
+        "decision_budget": 2000000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 697,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "e73e991ac6ee3e426cea82c2d98a104f728eb2cffe1346cffd2193a5036b7290"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 683,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "cd465ce1804ba106767e66eccd4b0ef8afb245a890032bb5d893a0293eb46d99"
+            }
+          ]
+        },
+        "gameplay": {
+          "phase": "historical_selection",
+          "episodes": 100,
+          "seed_start": 100000,
+          "epsilon": 0,
+          "lines_per_1000_placements": 93.33333333333333,
+          "lines_per_episode": 3.5,
+          "placements_per_episode": 37.5,
+          "deaths": 100,
+          "source": "docs/results/oracle_seed42_2m_gameplay.csv"
+        },
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed42-2m-periodic-500000.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "fd31f3ded75c40c5f2d4e6c49daeb23a5d68c62820b12b89b17ac6fc76ffe51a"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "fd32b037d7a8b5e8c7a404548783d45fbc8eae89f003362f85640042e01be0ac"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "24130136ab8a3d09f6a29416b924ebf4c22d5fde21f4ae8c5ccf6daa2e64f935"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "92720595f47a85e4316037d170e869cfc006ce63ec3835865233ee6d748f72cb"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "9f56566590f71277d5c0a25e12519c19b65f7adb4604d624636d7e7113faab50"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "c36311377f54b0ccee4d07d134e2363e38716b7b56dddd1956c043310b606e04"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "105291e2a242caffed5dbfa3ca4f83c79a8fb7e02c542cf78fadcfc86a227f2d"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "dd30cdbcbef0ee4b4f77c2e3aa6ac11ce056bf25da9060d9893634767ee12857"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "994e828a774f1c915867a9a80aedda0efb14d4009c5084c1e328c68671c7ea9f"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "6b888b88d642222ca8980ca8fd2ea1d8a2d3c55fb21c845225676c7dbbe5aa9f"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "e94443e132427b6a7083682327c16d036ffc34f696603460e6a6665165c59d99"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "8bd4d12e6b4fdafab5520d767a65a395b48b00dfbf473c7e84fa86c10845460f"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "da3c4b2642727dafc546db4111902d428a83e6dcc8dabe091e200b0eee9cb997"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "ee9bfc6784a23463151fef7c0eea8443ff99142c980d988e7eabe35cd5dfe500"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "68329c02e6620a63965bee40d7c5d00106641150522f9a961a952411f37fdcd2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "3841245dcf36cb9cb71f0a691dee13bc1f71353cbc314f43614577b53a11db28"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "36ff2a8c0a82f347a1da5044cbf13ce36809dbac6e3a7648047885c886c3299f"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "91452617679eb70663dcea26b80096f18c0c7b7c9f0f508af88d5995cd9c1d69"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "3b5cc6a2b4a790b128f9dfb84d323c182e47bdd331f59e948dc91e8e568098f5"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "d9aad02f16ed2b50d2ded7c4cdb9dddd741bed1914f819bf423b04b8be06db94"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "40426ef194f17a7f47db808730397bd04a098fc7758c5a17cb43e3626f11498b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "42b278fd0e86fb134d0d0370091f4eff11ac32cf87384761ee7639e2f0525b65"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "34edf1834baf7b5c304930dac65bcbbc20d53a20ba78ee08ae133683b591aa89"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "bf1e82d44bfcb0e594cfb6902765023c1236e2672c526fcd9574cef4874f5f8b"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "12e914acc62d13613f3c1960fc1b2ea0190c380f784383485e7c206e451acd81"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 2000000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 500000,
+        "stored_experiences": 500000,
+        "gradient_updates": 495001,
+        "target_sync_count": 99,
+        "saved_at": "2026-10-06T19:23:37.403380+00:00",
+        "status": "running",
+        "exact_resume_supported": false,
+        "string_count_static": 215,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed42-2m-periodic-500000.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_42/2m/checkpoint_000500000.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_1000000",
+      "training_seed": 42,
+      "decision_budget": 2000000,
+      "checkpoint_decisions": 1000000,
+      "role": "periodic",
+      "relative_path": "runs/oracle_mask/seed_42/2m/checkpoint_001000000.pt",
+      "filename": "checkpoint_001000000.pt",
+      "bytes": 5322057,
+      "sha256": "742a963a7e24a14f61c5159bad256c414c283d87af01f844517a792e56e48f8c",
+      "training": {
+        "decision_budget": 2000000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 681,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "ca6541bb9d820e35eddbeede512dfacc0734d378f6041909baa4eff87c3524b3"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 746,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "9a36b2daf8379f78a1e02b5727e17241085147b30c61ef3ce0dc128afdd7218e"
+            }
+          ]
+        },
+        "gameplay": {
+          "phase": "historical_selection",
+          "episodes": 100,
+          "seed_start": 100000,
+          "epsilon": 0,
+          "lines_per_1000_placements": 133.1807780320366,
+          "lines_per_episode": 5.82,
+          "placements_per_episode": 43.7,
+          "deaths": 100,
+          "source": "docs/results/oracle_seed42_2m_gameplay.csv"
+        },
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed42-2m-periodic-1000000.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "ee7e1f495dda0e44a8a14004144692a3c70755e2555fab10e8cf1b94efa2d12c"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "e4b5acebb1abfb42f3ea024e1fbc7475782001713ac3299bb651a591cf32d31f"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "21031890efc14659c02b61b90026ac702f9b0a9a9d52860232ef3817c5f6b16b"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "e25fde181507cf53f8110d92d93060858b8398355cee9ab9d8e7134d47fe7fc8"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "2e9c7a04647b52b73a335f02de32d59c3cdb1a6abd9e04d88f7c7d515dfd1c12"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "ab924a3ce1d1e481d2b04878387ad2c789eadc0546e0d905caf18c1dc9ccc715"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6e92ccc58c6882edeea2e9c78baf57b215f65ab457f67b159ce648c64ee9e9c9"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "61e7911ebdf0045ce9e99bf00c24933ad9babaf2cb9f0fc878a4925e11d6fa36"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "5a58297d8bc2db405086d716978eef7526abbd162f56ddc14d15874054a614b2"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "a6df26528b7ac69a3962ccf4309ba2b689d8b6c56c3259d79a85b1eb2ed1b016"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "206dcd27466c85776c420cfd0501db3539e0728161045c58e28292f0af49843c"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "798f5ae15b954f3f65f3d706c062dcf07ef0e95c115c01bbc1d2a9a650970de4"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "d88475705df976d01b12d4ed19c8934f76bc20108ee427291cf1e88fdedec7a7"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "3abe107edb8dd239c1087c2ee92016b753855d2e994e98b17eebdcc3699be4b1"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "c14fe9b0680772b3c01f7e3632c5f0e88f4d19658f68140e5ebe7ccc0442b02c"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "f08d297a4d388a5ef505ac9b1047d13c0126b604b194ef8f56ea6689d5e91c98"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "8b4978dd2e6f8f368982795e45c0be182a71e469b77b2588a3fd14783a1b6ed2"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "e6016f86c59c497f25314d228fe6eda7e774aacfb57e16db3b172ca9229610b3"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "60610ea61a7e821396a17941b1c254a9de9900b978cb71eb35ffbc455a7e6377"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "c986497a310caf15e036a3894cf406f0a0413b33cebd8439ea15cc8216a1b7ba"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "71c2e5178740a9145186b65ebe2fc0bd8cf384d31587cf426f2fd7e5e0ee9d1d"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "c232da192b15d43ee50125c22aaebb028246e3e447feb545c1b314aec36470f8"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "f845e35a0a9d2cbbeeffb003130eb2cf45d272cbc0a919bbede9847c09b1fb68"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "53ace5cede6579a4bfee926369514f312e93c661c56627065729a1e139d3067c"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "611836448639e947da34e3434bc0b454a46eff5e13e679580e852da80a03c6f1"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 2000000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 1000000,
+        "stored_experiences": 1000000,
+        "gradient_updates": 995001,
+        "target_sync_count": 199,
+        "saved_at": "2026-10-07T01:59:38.175815+00:00",
+        "status": "running",
+        "exact_resume_supported": false,
+        "string_count_static": 215,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed42-2m-periodic-1000000.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_42/2m/checkpoint_001000000.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_2000000",
+      "training_seed": 42,
+      "decision_budget": 2000000,
+      "checkpoint_decisions": 2000000,
+      "role": "periodic",
+      "relative_path": "runs/oracle_mask/seed_42/2m/checkpoint_002000000.pt",
+      "filename": "checkpoint_002000000.pt",
+      "bytes": 5322057,
+      "sha256": "7933ccfc4dbfee1064b3d3c13e34ed4eeb4f544919a682642f43fcd6eb9e4e34",
+      "training": {
+        "decision_budget": 2000000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 732,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "f1aaa9abf91066b41e23fc63df80adc98bf709a20b09beee00bb6561f21e1b73"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 746,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "ac23b7828fcec2b4e8c164d2800c8613843917a1769b714ca7659613237ad740"
+            }
+          ]
+        },
+        "gameplay": null,
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed42-2m-periodic-2000000.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6416ad6cd9eb65c1330e8c4f57b63b7f573c74c387ba7d72d2cdec70ed34ee52"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b9fe77156a2a45213bbba6445e4a916bab9f03440dc6d70790e43ce991e87016"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b00a321e483741a17ab48dd0d3c0be1a5644411c81da51344901bf04f2696c9c"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "9c5bc00b963bf887dcb5777f1841f4d8056c1e48e3d7af05060a105ef3ed7faa"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "27c095aa182e6ba55384db06535915a79b3ad567130b00265b3a97d3a94b6e90"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "471059fc96f8e0afbd1a52334940b3af9b0cb4eca170e878afb80ead202782ad"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "22f2f311acf910cb5fb60bdc6b0c6a74dd8158ad216d49e4afc6e4a70616f56c"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "2992bba7e3687a604a810208cfbf5f7e1cc47070e6edc45a71330b921da5b63a"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "7720a096a4f70aae136ef05602724174020285b8883b865d196ccd8daf21480a"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "05520671c6298b5c48083308c89ef4d5f63a2298447e9a3444ac5037d728f956"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "529d26928765d08363b6639a7851304736f28b52b35505203d98f3b449e90530"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "6795af80c4dbce17e90bc3e6bdd7be4b24e0db1914a0e0da2ca25b053fb4e6dd"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "0d58e7f99a131106467a12d6dede15ff38ff3aaad0de6ebf95e4f5d350f50934"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "255c8c73e64d3edd40327b25b54029cf0784a8ae0d7d8d8ac7a35003dad6a268"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "8a4441f8913bc8ae44b8168a8b86a6409ca591f66b52bbe930ab14ecb7ccc523"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "f0a9a45ee488dcc616f0e01e199080a18fcffbd5eddd713dfbf19e03d109bd9c"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "53ba1d89e4e09734a92a395bfe1896b46b4ad0d139bddcfb62228e92ff174d23"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "472f8c11728cfa730b4a6de0d4c99d1129b0fbdaad4042fa15ea208c42f96bea"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "11ed089da34bac0088a3648dc2c9b6f758d2aad5859ed3e53b9724c8c0d48cf9"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "ad063bec7a2501a6cb6e921414b965e6db5b2eaec34d235aabf231162a570881"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "14bdb268b04b5053d1b4e53adbe2a5317c6d7655c5c16e7e6ed2afdeb0fd626d"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "fe6171309033ccd36271fd0003577599ee7d7cb7408324db181ee57ac4352f19"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "36a8dfa66a71b9460872cb61e9f22aa57a7a488c6ebb8684aa60e03e824b2950"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "8a74576341e2626cc541923993765098aefe03135f846ed10ab92d287b6d3e63"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 2000000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 2000000,
+        "stored_experiences": 2000000,
+        "gradient_updates": 1995001,
+        "target_sync_count": 399,
+        "saved_at": "2026-10-07T16:02:52.133018+00:00",
+        "status": "running",
+        "exact_resume_supported": false,
+        "string_count_static": 216,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed42-2m-periodic-2000000.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_42/2m/checkpoint_002000000.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "final",
+      "training_seed": 42,
+      "decision_budget": 2000000,
+      "checkpoint_decisions": 2000000,
+      "role": "final",
+      "relative_path": "runs/oracle_mask/seed_42/2m/checkpoint_final.pt",
+      "filename": "checkpoint_final.pt",
+      "bytes": 5322057,
+      "sha256": "ada68fbe3e5c6e68775212f906e60ab031aa0d27948c0d833643bffafe457ab2",
+      "training": {
+        "decision_budget": 2000000,
+        "algorithm": "double",
+        "reward_mode": "minimal",
+        "seed": 42,
+        "device": "cuda",
+        "learning_rate": 0.0001,
+        "gamma": 0.99,
+        "replay_capacity": 100000,
+        "batch_size": 128,
+        "learning_starts": 5000,
+        "target_sync_updates": 5000,
+        "gradient_clip": 10.0,
+        "unreachable_penalty": -0.05,
+        "epsilon_decay_override": 38000,
+        "reachability_mask_mode": "oracle"
+      },
+      "epsilon_decay_stored_experiences": 38000,
+      "validated_devices": [
+        "cpu"
+      ],
+      "profile": "native_tetris_031_oracle_perf_v2",
+      "source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
+      "historical_launch_revision": "미저장/미확인",
+      "native_manifest": "vendor/native_tetris_031/manifest.json",
+      "exact_resume_supported": false,
+      "evaluation": {
+        "cpu_load_forward": {
+          "input": 235,
+          "output": 800,
+          "finite_weights": true,
+          "weights_unchanged": true,
+          "checkpoint_unchanged": true,
+          "no_gradients": true,
+          "states": [
+            {
+              "seed": 100000,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 732,
+              "geometric_count": 17,
+              "allowed_count": 17,
+              "q_sha256": "f1aaa9abf91066b41e23fc63df80adc98bf709a20b09beee00bb6561f21e1b73"
+            },
+            {
+              "seed": 100001,
+              "shape": [
+                1,
+                800
+              ],
+              "finite": true,
+              "action": 746,
+              "geometric_count": 34,
+              "allowed_count": 34,
+              "q_sha256": "ac23b7828fcec2b4e8c164d2800c8613843917a1769b714ca7659613237ad740"
+            }
+          ]
+        },
+        "gameplay": {
+          "phase": "historical_holdout",
+          "episodes": 50,
+          "seed_start": 100200,
+          "epsilon": 0,
+          "lines_per_1000_placements": 132.77826468010517,
+          "ci95": [
+            114.83031148303115,
+            149.690784896591
+          ],
+          "lines_per_episode": 6.06,
+          "placements_per_episode": 45.64,
+          "deaths": 50,
+          "source": "docs/results/oracle_seed42_2m_gameplay.csv"
+        },
+        "phase4_5_fixed_state": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        }
+      },
+      "metadata_scan": {
+        "method": "ZIP data.pkl pickletools 정적 opcode/string 검사; pickle 실행 안 함",
+        "path_email_secret_pattern_findings": 0,
+        "tensor_storage_semantic_scan": false
+      },
+      "distribution": {
+        "state": "APPROVED_FOR_PUBLIC_RELEASE",
+        "approved": true,
+        "copyright_owner": "HighKcal",
+        "license": "MIT",
+        "included": false,
+        "asset_bytes_prepared": true,
+        "asset_name": "Temeong-oracle_mask-seed42-2m-final.pt",
+        "license_file": "MODEL_LICENSE.txt",
+        "copyright_year": 2026
+      },
+      "payload_audit": {
+        "torch_version": "2.14.1+cpu",
+        "zip_members": 36,
+        "pickle_protocol": 2,
+        "pickle_globals": [
+          "collections OrderedDict",
+          "torch FloatStorage",
+          "torch._utils _rebuild_tensor_v2"
+        ],
+        "unsafe_globals": [],
+        "deserialization": "weights_only=True / map_location=cpu / mmap=True / 추가 safe_globals 없음",
+        "top_level_keys": [
+          "schema_version",
+          "checkpoint_contract",
+          "saved_at",
+          "started_at",
+          "status",
+          "config",
+          "epsilon",
+          "reachability_mask_mode",
+          "oracle_implementation_version",
+          "planner_semantics_version",
+          "uncertainty_policy",
+          "replay_mask_format",
+          "mask_timing",
+          "online_state_dict",
+          "target_state_dict",
+          "optimizer_state_dict",
+          "gradient_updates",
+          "stored_experiences",
+          "decision_count",
+          "target_sync_count",
+          "episode",
+          "metrics"
+        ],
+        "object_types": {
+          "builtins.dict": 17,
+          "builtins.int": 59,
+          "builtins.str": 32,
+          "builtins.bool": 8,
+          "builtins.list": 3,
+          "builtins.float": 43,
+          "collections.OrderedDict": 2,
+          "torch.Tensor": 30,
+          "builtins.tuple": 1,
+          "builtins.NoneType": 3
+        },
+        "tensor_inventory": [
+          {
+            "path": "root.online_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "6416ad6cd9eb65c1330e8c4f57b63b7f573c74c387ba7d72d2cdec70ed34ee52"
+          },
+          {
+            "path": "root.online_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "b9fe77156a2a45213bbba6445e4a916bab9f03440dc6d70790e43ce991e87016"
+          },
+          {
+            "path": "root.online_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "b00a321e483741a17ab48dd0d3c0be1a5644411c81da51344901bf04f2696c9c"
+          },
+          {
+            "path": "root.online_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "9c5bc00b963bf887dcb5777f1841f4d8056c1e48e3d7af05060a105ef3ed7faa"
+          },
+          {
+            "path": "root.online_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "27c095aa182e6ba55384db06535915a79b3ad567130b00265b3a97d3a94b6e90"
+          },
+          {
+            "path": "root.online_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "471059fc96f8e0afbd1a52334940b3af9b0cb4eca170e878afb80ead202782ad"
+          },
+          {
+            "path": "root.target_state_dict.0.weight",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "22f2f311acf910cb5fb60bdc6b0c6a74dd8158ad216d49e4afc6e4a70616f56c"
+          },
+          {
+            "path": "root.target_state_dict.0.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "2992bba7e3687a604a810208cfbf5f7e1cc47070e6edc45a71330b921da5b63a"
+          },
+          {
+            "path": "root.target_state_dict.2.weight",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "7720a096a4f70aae136ef05602724174020285b8883b865d196ccd8daf21480a"
+          },
+          {
+            "path": "root.target_state_dict.2.bias",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "05520671c6298b5c48083308c89ef4d5f63a2298447e9a3444ac5037d728f956"
+          },
+          {
+            "path": "root.target_state_dict.4.weight",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "529d26928765d08363b6639a7851304736f28b52b35505203d98f3b449e90530"
+          },
+          {
+            "path": "root.target_state_dict.4.bias",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "6795af80c4dbce17e90bc3e6bdd7be4b24e0db1914a0e0da2ca25b053fb4e6dd"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "0d58e7f99a131106467a12d6dede15ff38ff3aaad0de6ebf95e4f5d350f50934"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.0.exp_avg_sq",
+            "shape": [
+              256,
+              235
+            ],
+            "dtype": "torch.float32",
+            "numel": 60160,
+            "finite": true,
+            "sha256_raw": "255c8c73e64d3edd40327b25b54029cf0784a8ae0d7d8d8ac7a35003dad6a268"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "8a4441f8913bc8ae44b8168a8b86a6409ca591f66b52bbe930ab14ecb7ccc523"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.1.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "f0a9a45ee488dcc616f0e01e199080a18fcffbd5eddd713dfbf19e03d109bd9c"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "53ba1d89e4e09734a92a395bfe1896b46b4ad0d139bddcfb62228e92ff174d23"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.2.exp_avg_sq",
+            "shape": [
+              256,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 65536,
+            "finite": true,
+            "sha256_raw": "472f8c11728cfa730b4a6de0d4c99d1129b0fbdaad4042fa15ea208c42f96bea"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "11ed089da34bac0088a3648dc2c9b6f758d2aad5859ed3e53b9724c8c0d48cf9"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.3.exp_avg_sq",
+            "shape": [
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 256,
+            "finite": true,
+            "sha256_raw": "ad063bec7a2501a6cb6e921414b965e6db5b2eaec34d235aabf231162a570881"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "14bdb268b04b5053d1b4e53adbe2a5317c6d7655c5c16e7e6ed2afdeb0fd626d"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.4.exp_avg_sq",
+            "shape": [
+              800,
+              256
+            ],
+            "dtype": "torch.float32",
+            "numel": 204800,
+            "finite": true,
+            "sha256_raw": "fe6171309033ccd36271fd0003577599ee7d7cb7408324db181ee57ac4352f19"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.step",
+            "shape": [],
+            "dtype": "torch.float32",
+            "numel": 1,
+            "finite": true,
+            "sha256_raw": "2e630c48f8eb93c8b3608364caccd80ab82c9c1aebc23f8ef1e4d866c0087573"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "36a8dfa66a71b9460872cb61e9f22aa57a7a488c6ebb8684aa60e03e824b2950"
+          },
+          {
+            "path": "root.optimizer_state_dict.state.5.exp_avg_sq",
+            "shape": [
+              800
+            ],
+            "dtype": "torch.float32",
+            "numel": 800,
+            "finite": true,
+            "sha256_raw": "8a74576341e2626cc541923993765098aefe03135f846ed10ab92d287b6d3e63"
+          }
+        ],
+        "online_parameters": 331808,
+        "contains_online_weights": true,
+        "contains_target_weights": true,
+        "contains_optimizer": true,
+        "contains_rng_state": false,
+        "contains_replay": false,
+        "config": {
+          "decision_budget": 2000000,
+          "algorithm": "double",
+          "reward_mode": "minimal",
+          "seed": 42,
+          "device": "cuda",
+          "learning_rate": 0.0001,
+          "gamma": 0.99,
+          "replay_capacity": 100000,
+          "batch_size": 128,
+          "learning_starts": 5000,
+          "target_sync_updates": 5000,
+          "gradient_clip": 10.0,
+          "unreachable_penalty": -0.05,
+          "epsilon_decay_override": 38000,
+          "reachability_mask_mode": "oracle"
+        },
+        "decision_count": 2000000,
+        "stored_experiences": 2000000,
+        "gradient_updates": 1995001,
+        "target_sync_count": 399,
+        "saved_at": "2026-10-07T16:02:52.145018+00:00",
+        "status": "completed",
+        "exact_resume_supported": false,
+        "string_count_static": 216,
+        "string_count_structured": 205,
+        "static_findings_count": 0,
+        "structured_findings_count": 0,
+        "tensor_semantic_personal_data_extraction_performed": false,
+        "source_hash_verified_before_load": true
+      },
+      "initialization_provenance": {
+        "user_statement": "개인 PC에서 random initialization으로 직접 학습; pretrained/fine-tuning 없음; replay는 환경 상호작용으로 생성",
+        "current_source_evidence": [
+          "src/tetris_agent/rl/dqn.py:DQNTrainer.__init__",
+          "src/tetris_agent/rl/network.py:QNetwork",
+          "src/tetris_agent/rl/training.py:train"
+        ],
+        "historical_initial_weights_saved": false,
+        "historical_launch_sha_proven": false,
+        "assessment": "사용자 진술과 현재 코드·payload 조건이 일치; 각 과거 launch 전체 provenance를 payload만으로 증명하지 않음"
+      },
+      "release_asset_name": "Temeong-oracle_mask-seed42-2m-final.pt",
+      "local_delivery_verification": {
+        "copied_without_resaving": true,
+        "original_sha256_matches_registry": true,
+        "release_asset_sha256_verified": true,
+        "relative_install_path": "runs/oracle_mask/seed_42/2m/checkpoint_final.pt",
+        "phase4_5_evaluation": {
+          "evaluated_states": 256,
+          "greedy_first_choice_reachable_rate": 1.0,
+          "greedy_first_choice_unreachable_rate": 0.0,
+          "selected_physical_u_count": 0,
+          "reachability_mask_mode": "oracle",
+          "mixed_states": 183,
+          "geometric_valid_action_count": 7604,
+          "reachable_action_count": 6061,
+          "masked_physical_u_count": 1543
+        },
+        "frozen_registry_modes_verified": [
+          "research_oracle_greedy",
+          "main_oracle_play_witness"
+        ],
+        "model_file_hash_after_execution_verified": true,
+        "optimizer_updates": 0,
+        "replay_mutations": 0
+      }
+    }
+  ],
+  "release_asset_count": 9,
+  "same_step_periodic_final_comparison": [
+    {
+      "experiment_id": "oracle_mask.seed123.500k",
+      "step": 500000,
+      "artifact_ids": [
+        "step_500000",
+        "final"
+      ],
+      "file_sha256_different": true,
+      "tensor_comparison": {
+        "online_state_dict_tensor_bytes_equal": true,
+        "target_state_dict_tensor_bytes_equal": true,
+        "optimizer_state_dict_tensor_bytes_equal": true
+      },
+      "all_artifacts_retained": true
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "step": 2000000,
+      "artifact_ids": [
+        "step_2000000",
+        "final"
+      ],
+      "file_sha256_different": true,
+      "tensor_comparison": {
+        "online_state_dict_tensor_bytes_equal": true,
+        "target_state_dict_tensor_bytes_equal": true,
+        "optimizer_state_dict_tensor_bytes_equal": true
+      },
+      "all_artifacts_retained": true
+    }
+  ],
+  "repository": "https://github.com/HighKcal/Learning-Without-Game-Heuristics",
+  "license": "MIT",
+  "license_file": "MODEL_LICENSE.txt",
+  "copyright": "Copyright (c) 2026 HighKcal",
+  "approved_on": "2026-10-14",
+  "supported_checkpoint_count": 9
+}

@@ -1,0 +1,1437 @@
+{
+  "schema_version": 1,
+  "scope": "최종 파일 분류/hash. Control files3개는 자기참조를 피하고 PUBLIC_MANIFEST에서 검증한다.",
+  "human_ai_line_attribution_proven": false,
+  "internet_wide_similarity_audit_performed": false,
+  "records": [
+    {
+      "path": ".gitattributes",
+      "sha256": "34909e8ebfa88db0511b98bd090ef4d75919d90d946839e93b20625bc99d4332",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "9aebf1e3b81d860197e3d3f05e0779aacb3957dbaa91d23ee608ca52824ac005",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "dependency_licenses.json",
+      "sha256": "796784c59e996bcbdd5f747d39344ce3831fb39ccabbb8d2abef72a20e1c53dc",
+      "category": "dependency_reference_metadata_no_binaries",
+      "evidence_basis": "고정wheelURL/hash/licenseinventory",
+      "license_status": "상류dependency조건유지,참조metadata만포함"
+    },
+    {
+      "path": "docs/architecture.md",
+      "sha256": "cea2bae29dba405855c3ef21cacf956049ae092fd1d2f9bb58b522d939604afb",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/CHECKPOINT_FORMAT_OPTIONS.md",
+      "sha256": "8259099f9618db86ac8fcb6f187be41e05eb8844fb0ea68f7cc86b1f54c8d569",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/CHECKPOINT_SECURITY.md",
+      "sha256": "92c4c3a28f862e845a4b6b6cb8060f217110a50b4749d39289e9d16dd11f67ac",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/devlog.md",
+      "sha256": "96cd9006ae8fdace6dc3cba5600bef7d0325f4a2a23ffdeb4521f0a3c9b8da2d",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/evidence.md",
+      "sha256": "c9c3310b8fa8a07ba0f2cc5c5e98e94655b8edffe745da4f4f3c160c8f40671c",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/experiments.md",
+      "sha256": "e1f4ba18ed0453c6dcb222916e941a740c8e81c81234771eb0b1c69d27bed713",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/fixed_evaluation.md",
+      "sha256": "e9951f429d72a167e32856efbc24c6ed77e06ce05d61e42ca1bfad8a2f36d43f",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/formal_random.md",
+      "sha256": "2f99a6aa46fc60fe38fe07ebc00cd12d4b7ea04fd9546b4a797d9edff3a44825",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/gui.md",
+      "sha256": "075c2625b2e5c590ebeb450447a6f7d81b42f4db1573b1650c846f47a0601ca7",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/learner_performance.md",
+      "sha256": "43ebdea8e42c17f93f535167bdd5512ab3831dbd87ecb58ee66f2e01b4879555",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/licensing.md",
+      "sha256": "4892a695532d898c1ad93e3e9426db297ecc9a12a54034ee367374d8939fcede",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/MODEL_ASSET_SHA256SUMS.txt",
+      "sha256": "be486536e680379d791818fbd05ddf4a9b910b3e3a96fd68da80357a96710154",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/MODEL_CARDS.md",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "2d16102ce3eef7758a75e1fb8f2512fec67236bf29c15d215eae13782cf70ec6"
+    },
+    {
+      "path": "docs/MODEL_LICENSE_OPTIONS.md",
+      "sha256": "94be611c19493df6af12c78cfed0573421cb3a238121be0bfce0e42f0b857a01",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/MODEL_RELEASE_GUIDE.md",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "7a6b0c20ea4cd1f7f15821d76cf53d25fbdffeed011dcb22cbd690d1d4b2f0a4"
+    },
+    {
+      "path": "docs/models.md",
+      "sha256": "2c5e0de9062bdadf9e4f736e8839b05ed142807a5f63882cfb9ac83030c7808c",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/PHASE4_GITHUB_PUBLIC_PREPARATION_REPORT.md",
+      "sha256": "9143b5393ffa014f823e9bf1a0c08598c64016fd235146ecedd9c6398b00e6f6",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/play.md",
+      "sha256": "d100ac048bdda624d0d56db81e2f26f3a3b2ba58f18c146d02c02d77146bd031",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/PUBLIC_SANITIZATION.md",
+      "sha256": "093df15822ddb61aae88408171a3ba903f40ede07e4a5163e670ccc60f1ee90e",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/publication.md",
+      "sha256": "e50a042008e86067cc2dfeea3ec8277ed16e7ade092204e3e1f47840017fd6a4",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/RELEASE_APPROVALS.md",
+      "sha256": "e388c8f414034dfc88d74f09a10bd637008869d2640634c4a66c26edecacc191",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/RELEASE_OFFICIAL_SOURCES.json",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "c3fde95fafd5f71110d5206ab5a53212239b24c9acbf95d0f5f7cc5f8906cfb4"
+    },
+    {
+      "path": "docs/research.md",
+      "sha256": "7e33b8fcc75c6efbfa8481ed25a4d6e0ed44b86c87f1a99d07f55b86f3a6cd41",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/results/oracle_seed123_500k_gameplay.csv",
+      "sha256": "9f241604c7b7a6acd07b3a11d43cac1ddd7b8a6b71643de3734684c1d9e0a22c",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/results/oracle_seed42_2m_gameplay.csv",
+      "sha256": "b052f268abed9d574d041a388743474faeb9764e59827ca9c76e70f67bf3f735",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/results/PHASE4_5_RELEASE_VALIDATION.json",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "5010c94435c8c3f9616b9256ac2ac95fbe4e94700c0c2d98b64149b107e5da98"
+    },
+    {
+      "path": "docs/results/PHASE4_5_SOURCE_PROVENANCE_CHECK.json",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "0745ece2cf6ae794c1edbd1e619abaaa94fa4b95407c378b3ceda73c7d3cd150"
+    },
+    {
+      "path": "docs/results/PHASE4_VALIDATION.json",
+      "sha256": "041314f45c85290037bbcd4be0dea6e1fec890d16f70cd25bd304cf56bae1e87",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/results/provenance.json",
+      "sha256": "7e99065c1081cc02b10293ab025bed91bf566f7eb46e184c59acaea262adfacc",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/results/README.md",
+      "sha256": "f5348ec6bb56c4022b9b75daa5c0b26eec40b304ecf35f5368a7d69f9fbbed01",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/rl_pretraining.md",
+      "sha256": "43f26b1f7bd113f0775ae6c7f5ebc66d50433213d014a0b374c939b5aa4a6cc7",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/WSL_REPRODUCIBILITY_REPORT.md",
+      "sha256": "14fad09f721e55f664a6c3f8a3b6bbcf5189b039cf204682260c46348dc32f02",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/WSL_TRAINING.md",
+      "sha256": "ab3fbc1790ee3deaedd59a6460684d2bd9d91ac748fbc66171dcdfee37af3438",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "evaluation/fixed_eval_final_v1/freeze_gate.json",
+      "sha256": "cf18f355b829208490f191f3a0718be361695325b54626aefddb61f0747dd380",
+      "category": "environment_generated_evaluation_fixture",
+      "evidence_basis": "메타데이터/상태label; 사용자공개권리승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "evaluation/fixed_eval_final_v1/metadata.json",
+      "sha256": "a10e60e54fb4e9fb53b3a506e5a637e986a11577adad2bb780554035ba3e3c34",
+      "category": "environment_generated_evaluation_fixture",
+      "evidence_basis": "메타데이터/상태label; 사용자공개권리승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "evaluation/fixed_eval_final_v1/states.jsonl",
+      "sha256": "96014b2f1a44798e8695101d32bfb9a527daebdd3e1df88c35b9b6fdcd0928b0",
+      "category": "environment_generated_evaluation_fixture",
+      "evidence_basis": "메타데이터/상태label; 사용자공개권리승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "evaluation/fixed_eval_final_v1/untrained_seed42.json",
+      "sha256": "bccdd472855cccf7ba2dc8a4d7c6f77b9151d2d03a9a54ecc84da2fea39b549b",
+      "category": "environment_generated_evaluation_fixture",
+      "evidence_basis": "메타데이터/상태label; 사용자공개권리승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/index.yaml",
+      "sha256": "b3732f64fbcc839d296000b993598c7db2a2dd3155e6f3ffa340538d55801a1a",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/profiles/native_tetris_031_geometric.yaml",
+      "sha256": "43087eea4cea7678767da796dd179632fa4f123ffb4ca0ddc8fe27f2e2729fca",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/profiles/native_tetris_031_historical.yaml",
+      "sha256": "a3deb384c1b6a25d12a987977cae5daea88e0a1e9a37aa2f627f59934102ad94",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/profiles/native_tetris_031_intervention_archive.yaml",
+      "sha256": "101c7120e24eb06d38646ad03124cc6f56b0ee0f0e94aba1fc0a3a2884dbd747",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/profiles/native_tetris_031_oracle.yaml",
+      "sha256": "153ac5cfb66b3eafae01848c80e31246a2e1a96d80aff74063b81e0598c23df9",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "experiments/profiles/native_tetris_031_oracle_perf_v2.yaml",
+      "sha256": "4bdcd5c8d3f983bdc514927b0cee1b261cb5e9592c7f75607af035f50d8eae12",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "LICENSE",
+      "category": "phase5_approved_license",
+      "evidence_basis": "2026-10-14 사용자최종승인",
+      "sha256": "bc3c5a072125e1548b861d9bbcc258c49d84da09c65a42e9578d67c8180be505",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "MODEL_LICENSE.txt",
+      "category": "phase5_approved_license",
+      "evidence_basis": "2026-10-14 사용자최종승인",
+      "sha256": "bc3c5a072125e1548b861d9bbcc258c49d84da09c65a42e9578d67c8180be505",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "MODEL_RELEASE_MANIFEST.json",
+      "sha256": "98af024ebb781139348774b212f11a52951daa275f0eb1fa9637d31101494a65",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "PHASE4_5_RESEARCH_MODEL_RELEASE_AUDIT.md",
+      "category": "phase4_5_documentation_or_audit_metadata",
+      "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "sha256": "ad1b84bb1104b4e2e83d1852121d128462cf1b357f462578fbac8afff15c12e6"
+    },
+    {
+      "path": "pytest.ini",
+      "sha256": "4d5193eb36807e4622451417a9fe7bea71e7307137cd05cc214332e514fd9527",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "README.md",
+      "sha256": "d86b910894c7d41a36358971025ec5fb9ac4e2da7e9981aa6f4508f5392ac09d",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "requirements/linux-cpu-provenance.json",
+      "sha256": "05a056790254201af7fce747e7a8d507e3dfbe65d2963c831c0a1c2d04386fdd",
+      "category": "dependency_reference_metadata_no_binaries",
+      "evidence_basis": "고정wheelURL/hash/licenseinventory",
+      "license_status": "상류dependency조건유지,참조metadata만포함"
+    },
+    {
+      "path": "requirements/linux-cpu.lock",
+      "sha256": "abd7521da66fa0a40e8c70a25da6ee83e52fb6e7438206c3ed5511fdaf5004f3",
+      "category": "dependency_reference_metadata_no_binaries",
+      "evidence_basis": "고정wheelURL/hash/licenseinventory",
+      "license_status": "상류dependency조건유지,참조metadata만포함"
+    },
+    {
+      "path": "requirements/linux-cu132-provenance.json",
+      "sha256": "f3249ed0f1f45d1086e56b0747b0f692786d77fec2e5037683bcb37881a93e5a",
+      "category": "dependency_reference_metadata_no_binaries",
+      "evidence_basis": "고정wheelURL/hash/licenseinventory",
+      "license_status": "상류dependency조건유지,참조metadata만포함"
+    },
+    {
+      "path": "requirements/linux-cu132.lock",
+      "sha256": "6960c1217abab12a4ab239059d117e6aeb21f71a5bf1b643a83600b436307d6b",
+      "category": "dependency_reference_metadata_no_binaries",
+      "evidence_basis": "고정wheelURL/hash/licenseinventory",
+      "license_status": "상류dependency조건유지,참조metadata만포함"
+    },
+    {
+      "path": "requirements-linux.txt",
+      "sha256": "a883947a6c32f1ecbfbad0c7b6c349dba8b897aa30cc3739c2677533e3fea173",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "220733d09241cd41d8311218183d8f2c8053832d6b87b2f75a528140a0f3c458",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/_planner_benchmark.py",
+      "sha256": "e6a1d51b4e57c08ff52656aa61e30247c8865e7d6241af8f8100ac964239bcf1",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/analysis_inputs.py",
+      "sha256": "46f2bc1c7e82237819cf7663b0746348d629d755b2c2872c79a5dec6ee323ee0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/benchmark_planner.py",
+      "sha256": "6ee0845f3248ef36e364034668d43b655906fd4e809fd62bc648b4b272aa8d65",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/build_fixed_eval.py",
+      "sha256": "8a6953793ce871e5d9eebc9ff430e30602b71802df47487d93b219a433619a27",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/diagnose_cross_visitation.py",
+      "sha256": "1e45e227664ffdefb31f54a6c892ea0919a57bb57343261c0b7cd60f85997567",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/diagnose_u_competing_actions.py",
+      "sha256": "985403ed094002f5af2170ec1fe81e82c1ae12e4a98071c693c46c7949010a09",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/diagnose_u_feedback_timing.py",
+      "sha256": "92c6c8399d6969599fd90b7a7a4d6a6c561342aabaa3a273891871a13dd3b04a",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/evaluate_policy.py",
+      "sha256": "80d49dc202b4b44d67cabd16b0d07fc22c160939225e6e904b87687c37a3a866",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/infer_agent.py",
+      "sha256": "e750cbf8dbeb3850be6bcd50f1e0e9c1361f2e92a2c1ffd7f1e0ee338cb338c4",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/install_model_assets.py",
+      "sha256": "44160e52bf6494b9c9df23a685c3fde680a49aa1bf7d4e7f4f5bbc86751d47c4",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/install_native.py",
+      "sha256": "909ca7859a6cdec482f31b99b2caeb5ea7e0040b3db8d2caca46ae032c027a10",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/manual_play.py",
+      "sha256": "5272ac9c85984242b3ef7d5fea2c04d80ba22f89866ab83ce5370ec12e647220",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/measure_planner_experiment2_baseline.py",
+      "sha256": "755493fbe5b5815295ee93b3eaf5d9fffdb1ec18c54d3f12385bd64704895348",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/play_agent.py",
+      "sha256": "898a4784851784310c1fe3ff730a6c34fd6a606b1c6e777c685422709ddfdd5a",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/profile_learner.py",
+      "sha256": "b4e6ac1e6770b6346a8a9177c109c3c861b7d269d1208ad0a47ce252cf4375c0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/profile_planner.py",
+      "sha256": "784177cf82f09e1f1d1d86c9d8ebf4b63ec5d39847e803e991edd0da95d06a88",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/report_planner_experiment2.py",
+      "sha256": "45446cab63b6aa9d44bb4a1512afa5375c0b76a0a94ab5035aef264f23968e48",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/run_formal_random.py",
+      "sha256": "0c584e087d480bc690fd41ab76266c7add4039b8cd7e7841b8da8685c4abdbb0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/run_random_game.py",
+      "sha256": "42017c5ff3deb9e5a9ab0a199512d623bf117ef0ca9f01a45f649bc68d44eb2d",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/run_research.py",
+      "sha256": "5b89143b7253bac8c56a30239a6b63f529ba6965bbd13f6de3c722867afafbda",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/smoke_reachability_oracle.py",
+      "sha256": "8c850d2215269dd534351905cf118f82080133555bda2e42b890c28364750ef0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/smoke_rl.py",
+      "sha256": "ccbb24670513f4c480ef2baf6bdd71ebd9338534bfae611bac766c232b0b42cc",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/smoke_train.py",
+      "sha256": "c3d615bc3e399e97e318deb2d6b8bb8957e6eca71130343beaed937b1798f298",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/test_executor_cases.py",
+      "sha256": "a282a3a825a3dc9c051d9d2cd4cab08b7c11ec29a4a2a560c74ea194124383fe",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/test_planner_cases.py",
+      "sha256": "87a1b86b9c31c0fc395b2bea0398d543a7717fac8cc210c3f340ac550bcd6110",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/train_rl.py",
+      "sha256": "0e2c2aaeeba414b66e0bfd57613f35a1fa51e9526b5f0d15bd171c955b1927bc",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/validate_native_profile.py",
+      "sha256": "87e0cad9cef4d5ae933090165c942b9518eed4a1ee9b442022926d3e611009e9",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/validate_planner_experiment1.py",
+      "sha256": "33b95e3eaf4b4940d845dc47959ac5a5eb86ff6e6ce0569c5d318cee32765059",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/validate_planner_experiment2.py",
+      "sha256": "f6c3c7779ae5127c39dfe7dd219743a3a44ccd8af6b1360301f4a2110beb1347",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/validate_reachability_oracle.py",
+      "sha256": "5fc6103400bdbe292d0cc58612f12dc89d443a54befefd7bcc9075054e296495",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/verify_wsl_runtime.py",
+      "sha256": "ee3b6fb208f94076acb1d14502ce55893be92ee2b65a6184f9f977c1ac241b0a",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/__init__.py",
+      "sha256": "432079f7a44cdcb41cd7519f8307bb36ac29e3e1119bb214c1fa3e3f0e8796b7",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/_lock_verification.py",
+      "sha256": "18261bfa6037b06e2d061d56cce60aa7a249f4592dbd75ffb739e195f9d1e189",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/_piece_geometry.py",
+      "sha256": "7759ecb3cb51ed8d4ae05367f81ec66bbe586649a2ef938018799cb1af1dac43",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/_search_primitives.py",
+      "sha256": "8b39bc4c9b3d040ffee3a8d8b3e3a3f4511ca3ae485e880e496e7bb14ae41251",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/_search_snapshot.py",
+      "sha256": "7d441078ff70d0c26932c48257f2af7c08d194fd49a37874a449c3563b9bb35d",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/artifact_catalog.py",
+      "sha256": "4d322b39edd26ca982d420c3789300abdb8c8c5a6e79032b0bd4ee72318155d8",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/env_adapter.py",
+      "sha256": "85bbf6fc38bd83eee38f59273fc29b330531186a84585330d60935717e93846e",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/executor.py",
+      "sha256": "1e6e28b2a9456553eb798aef0f5291d399870dba68873919abe201fbbb8bf1c0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/experiments.py",
+      "sha256": "c9246fdd8ac2c5c01c8ed5f87c0cd893df71a5b2e4bd94d1f039dc9b3725f640",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/game_runner.py",
+      "sha256": "adeaee5cdde19722ba716b389e3a37d74d1e2989db49bc5692f8a21a18943804",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/inference.py",
+      "sha256": "5217d15257e5a2fd828c86204016c1fcffc9dd82cbfa054138bfce54664793ce",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/native_preflight.py",
+      "sha256": "7d987fecf12bc1e1d4d5487857d1e63d132ab04e843a910a19243035c178dcd6",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/planner.py",
+      "sha256": "ab66f989b3539b4a86a4a1783c1faa18261314ee58c18a796f5ebca99e228539",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/play.py",
+      "sha256": "4b31c8c4da34543d3b06961aacaba5e7400b0a2aa44ba4b7c9a23f516f56faea",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/random_decision.py",
+      "sha256": "9ffad42c1235573d77813d83801038ae708c338dc7b3a516a8f4963c6139c313",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/research_paths.py",
+      "sha256": "a170db32b879c2d93a1c6b97aa7444f60f526e59eea5a825a905cd501aea2672",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/__init__.py",
+      "sha256": "6689d36072cc4551a96f86797e808e58b5a98ba1db0300662beacdba047f9b50",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/_oracle_validation.py",
+      "sha256": "ce89ba8b6d1c9b86f49483e70a86de10ef4850e5250fc8fa2011a71f12115384",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/artifacts.py",
+      "sha256": "20aead017125ea982f0c9fb17579a6068de0c4f979b643b4c98326c593cc3c4b",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/config.py",
+      "sha256": "8ce89c85a05e2757b97e59dd6171edaa754c7a5e2d5e4c612bef41825298ca2d",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/dqn.py",
+      "sha256": "f90fb69e16a3d18c2f880d14f912542b474f39d843eac904d88ba210d88f3d82",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/evaluation.py",
+      "sha256": "985a679f566746389cc27beabad0ed373ea9ae76d546018915ce5356942d91d7",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/evaluation_build.py",
+      "sha256": "98a7b61394d7741a011942c6ae01596e30ba47d64a12ed1de72e1d70dcaa03d3",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/formal_random.py",
+      "sha256": "e0527f37dc04744483bb2402106b7fcbd436937169d3c4e62f9fd61a99b2aae8",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/metrics.py",
+      "sha256": "006536d900ad570f5f2bfa00ce391901c62781215847536785ff9a404f84e695",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/network.py",
+      "sha256": "279141e8d72db15999f0199d95808974b5c788249cb3dba19cb6593f5368acfa",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/oracle.py",
+      "sha256": "b49733ddaafb1654769247372936066e59289c919d592207cf882713fc3ff35e",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/policy.py",
+      "sha256": "9912ab92582ace5ea9da2145cd465d29a48aedb354dc2fb59b8f68461cbc7197",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/replay.py",
+      "sha256": "2b6238e921ce1cbe0bd4d8baaae01fdb730ebbef9956349865d4405828df3635",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/reward.py",
+      "sha256": "b7e9e9506eb7a314186089a0e4f5961194b0be122aac491df853ef78a9f9cef6",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/runner.py",
+      "sha256": "7959ee083d83da78a19dd9ab4593a39f8863d7ec6e8094814cc3dbd3bf14c010",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/state.py",
+      "sha256": "2ba974a02fc93cb6c5f09e6daeeffd515e8e26435dd616dd06379badd694d1ae",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/rl/training.py",
+      "sha256": "76ee4ad0b4bcaa923e116305916acdb38037c0df9073f878617da2508a844074",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "src/tetris_agent/target_space.py",
+      "sha256": "b4546a077cb3d746b1ac37d9adadfc99caae600e4842331d90fbd6c3ef6ae9e9",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/__init__.py",
+      "sha256": "1ceb65fddb9a67517135ba4e5c25a61b4b3f0dd3d2d426299687690c3306d436",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/_lock_verification.py",
+      "sha256": "18261bfa6037b06e2d061d56cce60aa7a249f4592dbd75ffb739e195f9d1e189",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/env_adapter.py",
+      "sha256": "85bbf6fc38bd83eee38f59273fc29b330531186a84585330d60935717e93846e",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/executor.py",
+      "sha256": "1e6e28b2a9456553eb798aef0f5291d399870dba68873919abe201fbbb8bf1c0",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/game_runner.py",
+      "sha256": "adeaee5cdde19722ba716b389e3a37d74d1e2989db49bc5692f8a21a18943804",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/planner.py",
+      "sha256": "c7c112cea002afeedcc26261cd2904d9ea2dff76f3d4d3b6b9031245a114ab40",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/PROVENANCE.json",
+      "sha256": "5c073593e755e0477884859e8067f9a2ce9e0909006520a98dd7ab6d8ed70d41",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/random_decision.py",
+      "sha256": "9ffad42c1235573d77813d83801038ae708c338dc7b3a516a8f4963c6139c313",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/__init__.py",
+      "sha256": "a625c044aeca2629a0ff4470dc5324fe210552f743c103e834320609946f388d",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/artifacts.py",
+      "sha256": "27569e81fffd494aa1d0466da0cbfc0bd80e7c4d014ec4ded02d95a84719e544",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/config.py",
+      "sha256": "14d00ebc6e45ec2270cac30d3b008e07a4a5a6831f2e4bfe9d47f041769b59d5",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/dqn.py",
+      "sha256": "5a2621c300da13c9530915f707cd4836f31441c57c97e416489c0bf37ad70b80",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/evaluation.py",
+      "sha256": "9a81f020f2031bc13eb8a8f30460ee4a40ffac8cd216fd504849b76e2e822410",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/evaluation_build.py",
+      "sha256": "bedb3105e5ddcebde8ad8849aa9b4afbcd870e94f9bcb23635d9a212ecfa5dab",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/formal_random.py",
+      "sha256": "e0527f37dc04744483bb2402106b7fcbd436937169d3c4e62f9fd61a99b2aae8",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/metrics.py",
+      "sha256": "8a518c77128019350e020639aaa1afe634fe2dee2167c54e8da023882f34e633",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/network.py",
+      "sha256": "279141e8d72db15999f0199d95808974b5c788249cb3dba19cb6593f5368acfa",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/oracle.py",
+      "sha256": "10acaa50256701ce80e3ad6e0152f8e5875713ae510abe7dc1569ab42e948adf",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/policy.py",
+      "sha256": "c20e25b55e613b26baa9f44be5e958f44205124444e8bd36b06ea4d0099b0e9b",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/replay.py",
+      "sha256": "774436c85b9aba425dec296eb0b91a80342b08a38a3366b450fda472864cdef0",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/reward.py",
+      "sha256": "b7e9e9506eb7a314186089a0e4f5961194b0be122aac491df853ef78a9f9cef6",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/runner.py",
+      "sha256": "5f7b5919ca8d6360052b860efb21dfa479dca88fc2194c0fcf681bc2522b74e3",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/state.py",
+      "sha256": "2ba974a02fc93cb6c5f09e6daeeffd515e8e26435dd616dd06379badd694d1ae",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/rl/training.py",
+      "sha256": "fbc8dbf6c82354698bcada5520811025e0c476e83be620705e5143b51ee416c1",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/fixtures/oracle_pre_perf_v2/target_space.py",
+      "sha256": "1a27ca34d3bfee5eb59a69e66ce833eaeed92825045991d0e59a9e091cda0992",
+      "category": "project_historical_reference_fixture",
+      "evidence_basis": "PROVENANCE.json의commit/filehash",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/oracle_reference.py",
+      "sha256": "56815780cdc25ac664aadeb8649b65bc05df828a6da485c0b1d9476b2d6ec624",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_env_adapter.py",
+      "sha256": "37ec4de4b83f72d505d49ed6a5d71b0980eec2231e220ef47e7db5b2eef0fdd0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_executor.py",
+      "sha256": "43d127fa8faea5d4d1d3988bb2b5a22342d129b864d60b79893786cf0c796c21",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_experiment_resolver.py",
+      "sha256": "0854785efd00e5d07f7266fe4a266a7dc7d25464e5e1bdc7557f33fbc316bc9b",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_formal_random.py",
+      "sha256": "81e83d371600703ab33628701ef5288243464295ec98c724b62fec8bbe637c19",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_frozen_transition_contract.py",
+      "sha256": "85ab70c2279792437d5c8543a1c4fab99041337afbd6d6fcfe4dd1e1b1d25988",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_game_runner.py",
+      "sha256": "5a695f01dc12bef5c8cdfcbda93b54f964c29eb80818aa38aa1986d02d84864f",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_native_installation.py",
+      "sha256": "adcfd7894bb3d6c4d6f7136393dbdde532f0a52cb745f622f637bedade319030",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_oracle_batch_validation.py",
+      "sha256": "c929bef4eab18f5c8ba15b6ee8c437627fd64445ce4b2382cd23580032d0f8f2",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_oracle_performance.py",
+      "sha256": "88d7f49cb8385f76895a60998f2bc85fb6cc5f4ba10dd2d9ff12174bed942525",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_piece_geometry_cache.py",
+      "sha256": "133d3ce8f3564a81ce666bf5ce61fc9cd1c0c415f011220458815c12302dec7b",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_planner.py",
+      "sha256": "fde6b68cbd9378e9ecfbf7959cdc071ea798eb0d5165eae2b514d4f40e0ff692",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_planner_experiment3.py",
+      "sha256": "277ee8458914b6ebea52861014fa561a6c1bf26f74833c0c446526683eb7e060",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_play_agent.py",
+      "sha256": "5792268fbad9962971cff7d30e4a38bc0f79702c66b564cb6121d789c8309ee0",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_play_agent_oracle.py",
+      "sha256": "32bf5c6eda73a23ad63a17c3482b60ceacafca83fc7e94b3f18f982ef8ca0863",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_random_decision.py",
+      "sha256": "9de7bb62100eba337ca25a57d1d6864e57773fd04dfd85ad84a1a0ccb029d2c3",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_reachability_oracle.py",
+      "sha256": "6551f03b485bb016bb72ea8a3f7ebfbf0be144ae53d51daa107bd6751f377cf3",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_research_artifacts.py",
+      "sha256": "0da059a62675e41acc073cc1e133b5c4f78999aa3a72ea9dc09c9063ccc8e64d",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_evaluation.py",
+      "sha256": "1faaec1d49d74a37c21df47a4a5c402468195cebd45a95f680b70aaedb4592e6",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_evaluation_multiseed.py",
+      "sha256": "44cac19deba654a149337871fb2dbf96529cfc65ca98a9d3f16b109d4eb71b0a",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_foundation.py",
+      "sha256": "28784cefc5c3e105a1be99fde81cde7f5341794f777d6b5c9604ea6c2bfc77da",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_hardening.py",
+      "sha256": "2c5a224a8d55bfaa11cc504ced6ad6a1c8ded6c7c5bcd36d9687f4dd2bc4626c",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_learning.py",
+      "sha256": "5e909c9756552056f4ba9ebea8257d1383ffae9d665ae8cd1bf5759a02dcb004",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_mask_equivalence.py",
+      "sha256": "5fda3bb899d770ab082bbfb8f93c50da58176620907d48d0801d029f5b48f062",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_runner.py",
+      "sha256": "81240bfbe0651b35e1cd4366661709aa7c0d0f3133544bbf1470433783eb76e8",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_rl_unreachable_penalty.py",
+      "sha256": "f250149d31e0be623239cd7a2e276fce3d189ed72aed2f6a476e932000e3f66f",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_search_primitives.py",
+      "sha256": "4767fb2834ae2385dd37b890d490d014bb8a0fc9a8f73977c535db6ba691db1b",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_target_space.py",
+      "sha256": "e46261e85190c4b43a17c1b5e52599609edd9c946bcac8c51b29b8b30ab5fef1",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_u_competing_actions_diagnostic.py",
+      "sha256": "d8fc4bfe63370d7477a417c23c7d77dd44681bdf86317bb1ba2fe0684d9db47e",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/test_u_feedback_timing_diagnostic.py",
+      "sha256": "24759ee2e83e3b50e6a8e763627c9ed2fd1f9ffd1fd0b69d7dca77a3f1c76c74",
+      "category": "user_project_codex_assisted",
+      "evidence_basis": "사용자진술+현재source; per-line저작권증명은아님",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "8295461a32dc8956f374aa9d3f61669833166271aa78c98068c78aa631f32203",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "vendor/native_tetris_031/LICENSE",
+      "sha256": "b793b35aab0bde16e8a86535cc8d3e0e3475ab200f02610846d996cbafd34591",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/manifest.json",
+      "sha256": "85ea64af766d5b3ee7afc44dbc8250b1211b8ed879cf798ed1f3f2e77ebd472d",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "vendor/native_tetris_031/README.md",
+      "sha256": "e9ff4845725738a376ffd6bbe2b5e12875027d11b183adf5ef985cc478211e31",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/__init__.py",
+      "sha256": "859cdfa90662e821909f57d51f24bdee3b23c036ed071d7ed794d26a5f625f9f",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/components/__init__.py",
+      "sha256": "ba8d199585158eab2b07f5c3bcc4a8c11fded3f36c448281875cea1d6cfe7179",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/components/tetromino.py",
+      "sha256": "f9bf8d77e02e28a777396373898dd77aa5659e3093041f4bd0546635b02e0860",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/components/tetromino_holder.py",
+      "sha256": "0507a55e3f9c72019002e0f1523d6c42fd027609339bb87d67971cbd443758f6",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/components/tetromino_queue.py",
+      "sha256": "c714764ceca48eabbe6352f2f06d46c2c0d94bae5612f41f4d7d9e8caaa720c3",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/components/tetromino_randomizer.py",
+      "sha256": "0ae06b5a45eeb7a5f6eb66cbb13d02e5ecbdeb269bc66138078c67189f06fcd8",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/envs/__init__.py",
+      "sha256": "59c862c8c77d19ce84e83c910a3c1b0f61d73ca324ceb4d1388d8aa090cfee09",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/envs/tetris.py",
+      "sha256": "5ce5402c104e3d931277cb9098433dda4718661b5e96392a4fce64407bfa6c02",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/envs/tetris_fn.py",
+      "sha256": "4bb418a946ee76408b4fb2c698f73f9c249149bdad7f7123f492f7692e771f81",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/functional/__init__.py",
+      "sha256": "9c22b44900acc8dc96e952cef5435bc9284c6e84d45930c1cae25b7592684ae1",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/functional/core.py",
+      "sha256": "7952f46fa5989a08ce92e880206f15f953a9bfe005cb58636436913e484444fb",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/functional/queue.py",
+      "sha256": "ace75e19edb4acebc9a335fbcaf2c978432a72aa40fcaf9641b89d3ea49fc438",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/functional/tetrominoes.py",
+      "sha256": "ab3239e6281323361472ae77aa443de49fc8eccfbe62b0c11835c0d57fb1b674",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/mappings/__init__.py",
+      "sha256": "8063941671a44f6fa1e368c8cd11a6a5354a87dfc4583014f0a27810cc54945a",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/mappings/actions.py",
+      "sha256": "f56d28f3dafeceb65213fd241cfcef7ce6a4bf24201f716ea6e81611204a3c51",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/mappings/rewards.py",
+      "sha256": "2f7543d1c87a210ab8239ab1d43b2b365147ec37d79e219c8ed60ccb6834d2cc",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/wrappers/__init__.py",
+      "sha256": "1b0e4ef70fecde99b0939316f88bab8686c6a273d34ac7140b49340261c24439",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/wrappers/grouped.py",
+      "sha256": "6838a74685dc9c9c8db55a8f55429b45174d50b69cb24faf24da6ff4afa8c1e3",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/tetris_gymnasium/wrappers/observation.py",
+      "sha256": "53a4eeafe8f37da50ad4f748eb35cfe43725c23cd4b8e890cf3e8dc33f0ca2fb",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/third_party/uvipen/LICENSE",
+      "sha256": "13963748bbbe5823a3d5e55fc09b2bdb7dfb7da82c79bd9a55d20743c85af072",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/third_party/uvipen/provenance.json",
+      "sha256": "0b17b65dddd959a9d9a4249d7f1af0a01ee9055a2c3912d21b1962b4c21d3f1d",
+      "category": "third_party_native_mit",
+      "evidence_basis": "원 Native MIT / 두 저작권자 고지·source hash; render 한 줄 수정 별도 기록",
+      "license_status": "상류MIT·원저작권고지유지"
+    },
+    {
+      "path": "vendor/native_tetris_031/upstream.patch",
+      "sha256": "812a183a6971a8c6e3e1947950cf876b73b8865379f26e5151b20d4c2cdbcef6",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    }
+  ],
+  "phase5_approval_applied": true
+}

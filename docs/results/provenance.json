@@ -1,0 +1,18 @@
+[
+  {
+    "file": "oracle_seed123_500k_gameplay.csv",
+    "source_relative_path": "analysis/oracle_mask/seed_123/500k/checkpoint_gameplay_eval.csv",
+    "source_sha256": "dcdadb7ec471471485eed6b7291b239d0c3d31aa6157350aff1502cc79b28d54",
+    "public_sha256": "9f241604c7b7a6acd07b3a11d43cac1ddd7b8a6b71643de3734684c1d9e0a22c",
+    "transformation": "path 열만 제거; 모든 다른 field와 수치 문자열 보존",
+    "rows": 10
+  },
+  {
+    "file": "oracle_seed42_2m_gameplay.csv",
+    "source_relative_path": "analysis/oracle_mask/seed_42/2m/checkpoint_gameplay_eval.csv",
+    "source_sha256": "87e27a6dfb803c433419c1458a8fbfb89df198d64d5dac86ea51e827d50fa3d4",
+    "public_sha256": "b052f268abed9d574d041a388743474faeb9764e59827ca9c76e70f67bf3f735",
+    "transformation": "path 열만 제거; 모든 다른 field와 수치 문자열 보존",
+    "rows": 10
+  }
+]

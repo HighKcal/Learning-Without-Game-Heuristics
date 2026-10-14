@@ -1,0 +1,18 @@
+schema_version: 1
+id: "native_tetris_031_historical"
+staging_compatibility: "pending"
+native_environment:
+  package: "tetris-gymnasium"
+  version: "0.3.1"
+  source_hash_required: true
+  version_alone_sufficient: false
+observation_values: 235
+target_actions: 800
+board:
+  width: 10
+  height: 20
+gravity: "per_native_primitive_action"
+gui: "planned_not_implemented"
+evidence: "docs/research_history/audit/TETRIS_MODIFICATION_AUDIT.md"
+physics_compatibility: "pending"
+production_default_changed: false

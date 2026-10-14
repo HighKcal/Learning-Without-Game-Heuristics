@@ -1,0 +1,35 @@
+{
+  "changed_existing_source_files": [
+    "src\\tetris_agent\\rl\\evaluation.py",
+    "src\\tetris_agent\\rl\\evaluation_build.py"
+  ],
+  "checks": {
+    "accepted_256": true,
+    "all_original_dev_prefixes_match": true,
+    "analytical_reference_pass": true,
+    "each_seed_64": true,
+    "fingerprint_pass": true,
+    "frozen_core_function_semantics_preserved": true,
+    "globally_unique_256": true,
+    "loader_pass": true,
+    "planner_system_rejections_absent": true,
+    "training_and_dev_artifacts_preserved": true,
+    "untrained_greedy_pass": true,
+    "zero_reachable_violations_absent": true
+  },
+  "contributions": {
+    "7": 64,
+    "42": 64,
+    "123": 64,
+    "456": 64
+  },
+  "dataset_fingerprint": "faa32dfae194863b05bb2e2e49ba224f9d0f3869564a28aa2ba0a50ad185e994",
+  "generation_seeds": [
+    7,
+    42,
+    123,
+    456
+  ],
+  "test_result": "492 passed in 46.16s",
+  "verdict": "FINAL FIXED EVAL V1: READY TO FREEZE"
+}

@@ -1,0 +1,145 @@
+{
+  "upstream_wheel_sha256_verified": true,
+  "native_original_license_bytes_match": true,
+  "native_sources": [
+    {
+      "path": "__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "859cdfa90662e821909f57d51f24bdee3b23c036ed071d7ed794d26a5f625f9f"
+    },
+    {
+      "path": "components/tetromino.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "f9bf8d77e02e28a777396373898dd77aa5659e3093041f4bd0546635b02e0860"
+    },
+    {
+      "path": "components/tetromino_holder.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "0507a55e3f9c72019002e0f1523d6c42fd027609339bb87d67971cbd443758f6"
+    },
+    {
+      "path": "components/tetromino_queue.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "c714764ceca48eabbe6352f2f06d46c2c0d94bae5612f41f4d7d9e8caaa720c3"
+    },
+    {
+      "path": "components/tetromino_randomizer.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "0ae06b5a45eeb7a5f6eb66cbb13d02e5ecbdeb269bc66138078c67189f06fcd8"
+    },
+    {
+      "path": "components/__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "ba8d199585158eab2b07f5c3bcc4a8c11fded3f36c448281875cea1d6cfe7179"
+    },
+    {
+      "path": "envs/tetris.py",
+      "raw_equal": false,
+      "normalized_equal": false,
+      "only_known_dtype_patch": true,
+      "sha256": "5ce5402c104e3d931277cb9098433dda4718661b5e96392a4fce64407bfa6c02"
+    },
+    {
+      "path": "envs/tetris_fn.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "4bb418a946ee76408b4fb2c698f73f9c249149bdad7f7123f492f7692e771f81"
+    },
+    {
+      "path": "envs/__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "59c862c8c77d19ce84e83c910a3c1b0f61d73ca324ceb4d1388d8aa090cfee09"
+    },
+    {
+      "path": "functional/core.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "7952f46fa5989a08ce92e880206f15f953a9bfe005cb58636436913e484444fb"
+    },
+    {
+      "path": "functional/queue.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "ace75e19edb4acebc9a335fbcaf2c978432a72aa40fcaf9641b89d3ea49fc438"
+    },
+    {
+      "path": "functional/tetrominoes.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "ab3239e6281323361472ae77aa443de49fc8eccfbe62b0c11835c0d57fb1b674"
+    },
+    {
+      "path": "functional/__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "9c22b44900acc8dc96e952cef5435bc9284c6e84d45930c1cae25b7592684ae1"
+    },
+    {
+      "path": "mappings/actions.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "f56d28f3dafeceb65213fd241cfcef7ce6a4bf24201f716ea6e81611204a3c51"
+    },
+    {
+      "path": "mappings/rewards.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "2f7543d1c87a210ab8239ab1d43b2b365147ec37d79e219c8ed60ccb6834d2cc"
+    },
+    {
+      "path": "mappings/__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "8063941671a44f6fa1e368c8cd11a6a5354a87dfc4583014f0a27810cc54945a"
+    },
+    {
+      "path": "wrappers/grouped.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "6838a74685dc9c9c8db55a8f55429b45174d50b69cb24faf24da6ff4afa8c1e3"
+    },
+    {
+      "path": "wrappers/observation.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "53a4eeafe8f37da50ad4f748eb35cfe43725c23cd4b8e890cf3e8dc33f0ca2fb"
+    },
+    {
+      "path": "wrappers/__init__.py",
+      "raw_equal": true,
+      "normalized_equal": true,
+      "only_known_dtype_patch": false,
+      "sha256": "1b0e4ef70fecde99b0939316f88bab8686c6a273d34ac7140b49340261c24439"
+    }
+  ],
+  "python_source_count": 19,
+  "semantic_difference": "기존 render dtype np.integer -> int 한 줄만",
+  "historical_fixture_files_verified_against_git_objects": 24,
+  "historical_fixture_commit": "f78017e0a1ac831c2fcd0bc74dcc0d546f19822e",
+  "git_history_copied": false,
+  "source_algorithm_modified": false
+}

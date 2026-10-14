@@ -1,0 +1,1310 @@
+{
+  "schema_version": 1,
+  "environment": {
+    "os": "Ubuntu24.04 WSL2",
+    "python": "3.12.10",
+    "torch": "2.14.1+cpu",
+    "device": "cpu",
+    "thread_limit": 1,
+    "dependency_venv": "Phase4에서 lock으로 새로 설치한 CPU venv 재사용",
+    "source": "Phase4.5 공개 후보만 사용",
+    "source_history_or_private_runtime_import": false
+  },
+  "steps": [
+    {
+      "name": "native_verify",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "install_assets",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "reject_overwrite",
+      "exit_code": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "reject_tamper",
+      "exit_code": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "reject_manifest_registry_mismatch",
+      "exit_code": 2,
+      "expected": 2,
+      "passed": true
+    },
+    {
+      "name": "eval_0",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_0_research_geometric_top1",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_0_main_geometric_play_fallback",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_1",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_1_research_geometric_top1",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_1_main_geometric_play_fallback",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_2",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_2_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_2_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_3",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_3_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_3_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_4",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_4_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_4_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_5",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_5_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_5_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_6",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_6_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_6_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_7",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_7_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_7_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "eval_8",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_8_research_oracle_greedy",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "infer_8_main_oracle_play_witness",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "fresh_smoke_geometric",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "fresh_smoke_oracle",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    },
+    {
+      "name": "focused_contracts",
+      "exit_code": 0,
+      "expected": 0,
+      "passed": true
+    }
+  ],
+  "focused_contracts": {
+    "passed": 75,
+    "skipped": 0,
+    "failures": 0
+  },
+  "release_assets": 9,
+  "registry_mode_runs": 18,
+  "fixed_state_evaluations": 9,
+  "fixed_states_per_model": 256,
+  "fixed_state_choices_total": 2304,
+  "model_results": [
+    {
+      "experiment_id": "geometric.baseline.seed123.100k",
+      "artifact_id": "final",
+      "asset": "Temeong-geometric-baseline-seed123-100k-final.pt",
+      "sha256": "c882fa1bd96f7493cb1bf9ef0149b3b126d524d777ac22396bcf59b8184321b9",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 0.8125,
+        "greedy_first_choice_unreachable_rate": 0.1875,
+        "selected_physical_u_count": 48,
+        "reachability_mask_mode": "geometric",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 0
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "geometric.baseline.seed123.100k",
+          "artifact_id": "final",
+          "mode": "research_geometric_top1",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.05528970599999994,
+            "planner_call_count": 6,
+            "oracle_computation_count": 0,
+            "oracle_elapsed_seconds": 0.0,
+            "oracle_visited_states": 0,
+            "geometric_valid_action_count": 0,
+            "reachable_action_count": 0,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "geometric.baseline.seed123.100k",
+          "artifact_id": "final",
+          "mode": "main_geometric_play_fallback",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "placements": 6,
+            "lines": 0,
+            "deaths": 0,
+            "terminated": false,
+            "truncated": true,
+            "stop_reason": "PLACEMENT_LIMIT",
+            "diagnostic": null,
+            "decisions": 6,
+            "total_u_rejects": 0,
+            "rejects_per_placement": 0.0,
+            "mean_reachable_rank": 1.0,
+            "p95_reachable_rank": 1,
+            "max_fallback_depth": 1,
+            "max_u_rejects_per_decision": 0,
+            "planner_call_count": 6,
+            "planner_total_seconds": 0.05821007899999131,
+            "candidate_search_total_seconds": 0.0628984999999993,
+            "wall_seconds": 0.06940863599999858
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "geometric.penalty020.seed42.500k",
+      "artifact_id": "final",
+      "asset": "Temeong-geometric-penalty020-seed42-500k-final.pt",
+      "sha256": "8124cb9a9ebd54461967213c1b40744f399d8f30ca4521470a3f4fc563b4d0ff",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 0.9140625,
+        "greedy_first_choice_unreachable_rate": 0.0859375,
+        "selected_physical_u_count": 22,
+        "reachability_mask_mode": "geometric",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 0
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "geometric.penalty020.seed42.500k",
+          "artifact_id": "final",
+          "mode": "research_geometric_top1",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 1.0,
+            "lines_cleared": 1,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.11121176199999994,
+            "planner_call_count": 6,
+            "oracle_computation_count": 0,
+            "oracle_elapsed_seconds": 0.0,
+            "oracle_visited_states": 0,
+            "geometric_valid_action_count": 0,
+            "reachable_action_count": 0,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 1.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 1.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "geometric.penalty020.seed42.500k",
+          "artifact_id": "final",
+          "mode": "main_geometric_play_fallback",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "placements": 6,
+            "lines": 1,
+            "deaths": 0,
+            "terminated": false,
+            "truncated": true,
+            "stop_reason": "PLACEMENT_LIMIT",
+            "diagnostic": null,
+            "decisions": 6,
+            "total_u_rejects": 0,
+            "rejects_per_placement": 0.0,
+            "mean_reachable_rank": 1.0,
+            "p95_reachable_rank": 1,
+            "max_fallback_depth": 1,
+            "max_u_rejects_per_decision": 0,
+            "planner_call_count": 6,
+            "planner_total_seconds": 0.11055583899999988,
+            "candidate_search_total_seconds": 0.11534068399999953,
+            "wall_seconds": 0.12279136999999807
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed123.500k",
+      "artifact_id": "step_500000",
+      "asset": "Temeong-oracle_mask-seed123-500k-periodic-500000.pt",
+      "sha256": "f27eb283f952a10f80473458d01eb341f051d0358733fe2a7739205b62cade76",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed123.500k",
+          "artifact_id": "step_500000",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.48336139800000666,
+            "oracle_visited_states": 2741,
+            "geometric_valid_action_count": 156,
+            "reachable_action_count": 156,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed123.500k",
+          "artifact_id": "step_500000",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.4885523899999953,
+            "oracle_visited_states": 2741,
+            "geometric_valid_action_count": 156,
+            "reachable_action_count": 156,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed123.500k",
+      "artifact_id": "final",
+      "asset": "Temeong-oracle_mask-seed123-500k-final.pt",
+      "sha256": "cd4d5d9423a986804acecbe7a7b48ae440db6ada5598d931e82bb680c656f146",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed123.500k",
+          "artifact_id": "final",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.4839362319999907,
+            "oracle_visited_states": 2741,
+            "geometric_valid_action_count": 156,
+            "reachable_action_count": 156,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed123.500k",
+          "artifact_id": "final",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.4752667429999846,
+            "oracle_visited_states": 2741,
+            "geometric_valid_action_count": 156,
+            "reachable_action_count": 156,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_300000",
+      "asset": "Temeong-oracle_mask-seed42-2m-periodic-300000.pt",
+      "sha256": "8fb9e7e69a2fc9cbe7b2c38a8e5babff72c4c9387ca5fb6757a5fd963cf6e337",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_300000",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.527037388000025,
+            "oracle_visited_states": 2890,
+            "geometric_valid_action_count": 157,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_300000",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5048205889999906,
+            "oracle_visited_states": 2890,
+            "geometric_valid_action_count": 157,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_500000",
+      "asset": "Temeong-oracle_mask-seed42-2m-periodic-500000.pt",
+      "sha256": "f0de04cab322f7670512f8004505c36c5fe98839f79438b8002d1b6131d41ed9",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_500000",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.4889814639999912,
+            "oracle_visited_states": 2840,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_500000",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.4860381980000028,
+            "oracle_visited_states": 2840,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_1000000",
+      "asset": "Temeong-oracle_mask-seed42-2m-periodic-1000000.pt",
+      "sha256": "742a963a7e24a14f61c5159bad256c414c283d87af01f844517a792e56e48f8c",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_1000000",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5262365470000105,
+            "oracle_visited_states": 2894,
+            "geometric_valid_action_count": 153,
+            "reachable_action_count": 153,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_1000000",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 0.0,
+            "lines_cleared": 0,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5114167219999786,
+            "oracle_visited_states": 2894,
+            "geometric_valid_action_count": 153,
+            "reachable_action_count": 153,
+            "masked_physical_u_count": 0,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 0.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 0.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "step_2000000",
+      "asset": "Temeong-oracle_mask-seed42-2m-periodic-2000000.pt",
+      "sha256": "7933ccfc4dbfee1064b3d3c13e34ed4eeb4f544919a682642f43fcd6eb9e4e34",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_2000000",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 1.0,
+            "lines_cleared": 1,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5359410309999646,
+            "oracle_visited_states": 2922,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 1.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 1.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "step_2000000",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 1.0,
+            "lines_cleared": 1,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5212551110000163,
+            "oracle_visited_states": 2922,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 1.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 1.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    },
+    {
+      "experiment_id": "oracle_mask.seed42.2m",
+      "artifact_id": "final",
+      "asset": "Temeong-oracle_mask-seed42-2m-final.pt",
+      "sha256": "ada68fbe3e5c6e68775212f906e60ab031aa0d27948c0d833643bffafe457ab2",
+      "eval": {
+        "evaluated_states": 256,
+        "greedy_first_choice_reachable_rate": 1.0,
+        "greedy_first_choice_unreachable_rate": 0.0,
+        "selected_physical_u_count": 0,
+        "reachability_mask_mode": "oracle",
+        "mixed_states": 183,
+        "geometric_valid_action_count": 7604,
+        "reachable_action_count": 6061,
+        "masked_physical_u_count": 1543
+      },
+      "frozen_inference": [
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "final",
+          "mode": "research_oracle_greedy",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 1.0,
+            "lines_cleared": 1,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5170787510000139,
+            "oracle_visited_states": 2922,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 1.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 1.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        },
+        {
+          "experiment_id": "oracle_mask.seed42.2m",
+          "artifact_id": "final",
+          "mode": "main_oracle_play_witness",
+          "device": "cpu",
+          "seed": 100000,
+          "epsilon": 0,
+          "training": false,
+          "optimizer_steps": 0,
+          "replay_mutations": 0,
+          "checkpoint_unchanged": true,
+          "weights_unchanged": true,
+          "no_gradients": true,
+          "result": {
+            "episode_return": 1.0,
+            "lines_cleared": 1,
+            "pieces_placed": 6,
+            "decision_count": 6,
+            "stored_transitions": 6,
+            "unreachable_count": 0,
+            "consecutive_unreachable": 0,
+            "max_consecutive_unreachable": 0,
+            "self_loop_count": 0,
+            "terminated": false,
+            "truncated": true,
+            "planner_elapsed_seconds": 0.0,
+            "planner_call_count": 0,
+            "oracle_computation_count": 7,
+            "oracle_elapsed_seconds": 0.5128556059999596,
+            "oracle_visited_states": 2922,
+            "geometric_valid_action_count": 158,
+            "reachable_action_count": 157,
+            "masked_physical_u_count": 1,
+            "selected_physical_u_count": 0,
+            "reward_totals": {
+              "line": 1.0,
+              "unreachable": 0.0,
+              "death": 0.0,
+              "shaping": 0.0,
+              "total": 1.0
+            },
+            "stop_reason": "TRUNCATED",
+            "diagnostic": null
+          }
+        }
+      ]
+    }
+  ],
+  "fresh_smoke": {
+    "geometric": {
+      "decision_count": 32,
+      "stored_experiences": 32,
+      "replay_size": 32,
+      "gradient_updates": 29,
+      "target_sync_count": 3,
+      "passed": true,
+      "status": "completed",
+      "checkpoints": [
+        {
+          "name": "checkpoint_000000016.pt",
+          "sha256": "620342c43f7312270894cd647406fa92e504b5de07df91cfccaf77521953286f",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 13
+        },
+        {
+          "name": "checkpoint_000000032.pt",
+          "sha256": "0b0371e8ae6cda9bbe08caab2f83eaa100b988061be9e6d66b51b6ef316ba8db",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        },
+        {
+          "name": "checkpoint_final.pt",
+          "sha256": "19239e6caf900a4f5f8f6ec296fff2ba7d7e0a2ae16ba883ba8642c012c57b82",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        }
+      ],
+      "parameter_max_abs_changes": {
+        "0.weight": 0.0023395803291350603,
+        "0.bias": 0.0023611942306160927,
+        "2.weight": 0.002655401825904846,
+        "2.bias": 0.0022981874644756317,
+        "4.weight": 0.002160213887691498,
+        "4.bias": 0.001916978508234024
+      }
+    },
+    "oracle": {
+      "decision_count": 32,
+      "stored_experiences": 32,
+      "replay_size": 32,
+      "gradient_updates": 29,
+      "target_sync_count": 3,
+      "passed": true,
+      "status": "completed",
+      "checkpoints": [
+        {
+          "name": "checkpoint_000000016.pt",
+          "sha256": "c9d46034ed31bbf2b5f33cc1496878f2f148632ddef859f3d49d80c2f96db151",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 13
+        },
+        {
+          "name": "checkpoint_000000032.pt",
+          "sha256": "88be16e274b213ceada2170f1544fd2ae2cf8bcd3fb0a35e5d4e1b7635bd9c5d",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        },
+        {
+          "name": "checkpoint_final.pt",
+          "sha256": "d7de633577e5f388f739ff696bf5993e14af61a0fdb00f78205b1e1f1391c7ca",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        }
+      ],
+      "parameter_max_abs_changes": {
+        "0.weight": 0.0025147125124931335,
+        "0.bias": 0.0023498181253671646,
+        "2.weight": 0.002557547762989998,
+        "2.bias": 0.002376736141741276,
+        "4.weight": 0.0021472685039043427,
+        "4.bias": 0.0019068345427513123
+      }
+    }
+  },
+  "scope": "배포 파일 동일성과 실행 계약의 기능 검증. 장기 학습·독립 gameplay 성능 재평가를 의미하지 않는다.",
+  "install_helper_hash_tested": "44160e52bf6494b9c9df23a685c3fde680a49aa1bf7d4e7f4f5bbc86751d47c4",
+  "source_files_unchanged_since_test": [
+    "src/tetris_agent/artifact_catalog.py",
+    "src/tetris_agent/env_adapter.py",
+    "src/tetris_agent/executor.py",
+    "src/tetris_agent/experiments.py",
+    "src/tetris_agent/game_runner.py",
+    "src/tetris_agent/inference.py",
+    "src/tetris_agent/native_preflight.py",
+    "src/tetris_agent/planner.py",
+    "src/tetris_agent/play.py",
+    "src/tetris_agent/random_decision.py",
+    "src/tetris_agent/research_paths.py",
+    "src/tetris_agent/target_space.py",
+    "src/tetris_agent/_lock_verification.py",
+    "src/tetris_agent/_piece_geometry.py",
+    "src/tetris_agent/_search_primitives.py",
+    "src/tetris_agent/_search_snapshot.py",
+    "src/tetris_agent/__init__.py",
+    "src/tetris_agent/rl/artifacts.py",
+    "src/tetris_agent/rl/config.py",
+    "src/tetris_agent/rl/dqn.py",
+    "src/tetris_agent/rl/evaluation.py",
+    "src/tetris_agent/rl/evaluation_build.py",
+    "src/tetris_agent/rl/formal_random.py",
+    "src/tetris_agent/rl/metrics.py",
+    "src/tetris_agent/rl/network.py",
+    "src/tetris_agent/rl/oracle.py",
+    "src/tetris_agent/rl/policy.py",
+    "src/tetris_agent/rl/replay.py",
+    "src/tetris_agent/rl/reward.py",
+    "src/tetris_agent/rl/runner.py",
+    "src/tetris_agent/rl/state.py",
+    "src/tetris_agent/rl/training.py",
+    "src/tetris_agent/rl/_oracle_validation.py",
+    "src/tetris_agent/rl/__init__.py"
+  ]
+}

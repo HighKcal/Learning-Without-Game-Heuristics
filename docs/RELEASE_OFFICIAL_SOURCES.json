@@ -1,0 +1,56 @@
+{
+  "reviewed_on": "2026-10-14",
+  "sources": [
+    {
+      "title": "OpenAI Terms of Use",
+      "url": "https://openai.com/policies/terms-of-use/",
+      "effective_or_updated": "2026-01-01",
+      "sections": [
+        "Content",
+        "Using our Services"
+      ]
+    },
+    {
+      "title": "OpenAI Service Terms",
+      "url": "https://openai.com/policies/service-terms/",
+      "effective_or_updated": "2026-09-29",
+      "sections": [
+        "4. Codex and Code Generation"
+      ]
+    },
+    {
+      "title": "OpenAI Services Agreement",
+      "url": "https://openai.com/policies/services-agreement/",
+      "sections": [
+        "3.3",
+        "4.1",
+        "4.3",
+        "4.4"
+      ]
+    },
+    {
+      "title": "MIT",
+      "url": "https://opensource.org/license/mit"
+    },
+    {
+      "title": "Apache-2.0",
+      "url": "https://www.apache.org/licenses/LICENSE-2.0"
+    },
+    {
+      "title": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "title": "PyTorch 2.14 serialization",
+      "url": "https://docs.pytorch.org/docs/2.14/notes/serialization.html"
+    },
+    {
+      "title": "PyTorch Security Policy",
+      "url": "https://github.com/pytorch/pytorch/security/policy"
+    },
+    {
+      "title": "GitHub Releases",
+      "url": "https://docs.github.com/en/repositories/releasing-projects-on-github/about-releases"
+    }
+  ]
+}

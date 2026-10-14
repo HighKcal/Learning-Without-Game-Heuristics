@@ -1,0 +1,9 @@
+tetris-gymnasium==0.3.1
+gymnasium==1.3.0
+numpy==2.5.3
+opencv-python==4.14.0.94
+pytest==9.1.1
+PyYAML==6.0.3
+# PyTorch 2.14.1 is required by inference; the recorded local CPU bootstrap
+# uses preserved 2.14.1+cpu. Native Tetris source hashes must match the profile;
+# installing the version above alone does not establish physics compatibility.

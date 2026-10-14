@@ -1,0 +1,334 @@
+{
+  "environment": {
+    "os": "Ubuntu 24.04 WSL2",
+    "python": "3.12.10",
+    "device": "cpu",
+    "new_venv": true,
+    "windows_source_import": false,
+    "private_artifact_input": false,
+    "os_or_interpreter_reinstalled": false
+  },
+  "steps": [
+    {
+      "name": "pip_check",
+      "exit_code": 0
+    },
+    {
+      "name": "native_install",
+      "exit_code": 0
+    },
+    {
+      "name": "native_verify",
+      "exit_code": 0
+    },
+    {
+      "name": "runtime",
+      "exit_code": 0
+    },
+    {
+      "name": "import",
+      "exit_code": 0
+    },
+    {
+      "name": "pytest",
+      "exit_code": 0
+    },
+    {
+      "name": "smoke_geometric",
+      "exit_code": 0
+    },
+    {
+      "name": "eval_geometric",
+      "exit_code": 0
+    },
+    {
+      "name": "infer_geometric",
+      "exit_code": 0
+    },
+    {
+      "name": "smoke_oracle",
+      "exit_code": 0
+    },
+    {
+      "name": "eval_oracle",
+      "exit_code": 0
+    },
+    {
+      "name": "infer_oracle",
+      "exit_code": 0
+    },
+    {
+      "name": "registry_unavailable",
+      "exit_code": 2
+    }
+  ],
+  "pytest": {
+    "tests": 808,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 5,
+    "passed": 803
+  },
+  "smoke": {
+    "geometric": {
+      "native": {
+        "profile": "native_tetris_031_oracle_perf_v2",
+        "source_files": 19,
+        "native_source_verified": true
+      },
+      "device": "cpu",
+      "mask": "geometric",
+      "status": "completed",
+      "decision_count": 32,
+      "stored_experiences": 32,
+      "replay_size": 32,
+      "gradient_updates": 29,
+      "target_sync_count": 3,
+      "parameter_max_abs_changes": {
+        "0.weight": 0.0023395803291350603,
+        "0.bias": 0.0023611942306160927,
+        "2.weight": 0.002655401825904846,
+        "2.bias": 0.0022981874644756317,
+        "4.weight": 0.002160213887691498,
+        "4.bias": 0.001916978508234024
+      },
+      "optimizer_steps": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      "checkpoints": [
+        {
+          "name": "checkpoint_000000016.pt",
+          "sha256": "019747ba2d0878d32071d0c0d4abca3d2a86329d8a6eab7da18acedb6bc88368",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 13
+        },
+        {
+          "name": "checkpoint_000000032.pt",
+          "sha256": "0e146ee5603800f10a657e34a4b9cdcc376ee206ea7719ee0331bc3af5903cce",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        },
+        {
+          "name": "checkpoint_final.pt",
+          "sha256": "fb9a05a6e274f1884ff6f27a08935f89c664d7b1d0de010732d84cdcb9072085",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        }
+      ],
+      "passed": true,
+      "finite_loss_range": [
+        5.9769263316411525e-05,
+        0.00448088813573122
+      ]
+    },
+    "oracle": {
+      "native": {
+        "profile": "native_tetris_031_oracle_perf_v2",
+        "source_files": 19,
+        "native_source_verified": true
+      },
+      "device": "cpu",
+      "mask": "oracle",
+      "status": "completed",
+      "decision_count": 32,
+      "stored_experiences": 32,
+      "replay_size": 32,
+      "gradient_updates": 29,
+      "target_sync_count": 3,
+      "parameter_max_abs_changes": {
+        "0.weight": 0.0025147125124931335,
+        "0.bias": 0.0023498181253671646,
+        "2.weight": 0.002557547762989998,
+        "2.bias": 0.002376736141741276,
+        "4.weight": 0.0021472685039043427,
+        "4.bias": 0.0019068345427513123
+      },
+      "optimizer_steps": [
+        29,
+        29,
+        29,
+        29,
+        29,
+        29
+      ],
+      "checkpoints": [
+        {
+          "name": "checkpoint_000000016.pt",
+          "sha256": "17b9c3a040b61a2fba5fb65b528a26cc28620ef3d2c308be97625cd2f1dbe27e",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 13
+        },
+        {
+          "name": "checkpoint_000000032.pt",
+          "sha256": "b0a823b7e5e66b482c41e74687390cc90627bd19f28be2babcef2c88adf5ce45",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        },
+        {
+          "name": "checkpoint_final.pt",
+          "sha256": "b809fe689a754896e15878c166790cfaa38807b00dfea844776f7295ce6b84c1",
+          "weights_reloaded_exactly": true,
+          "gradient_updates": 29
+        }
+      ],
+      "passed": true,
+      "finite_loss_range": [
+        8.674363925820217e-05,
+        0.0051410142332315445
+      ]
+    }
+  },
+  "evaluation": {
+    "geometric": {
+      "analytical_random_reference": {
+        "mixed_state_count": 183,
+        "mixed_state_reachable_rate": 0.7580647187683067,
+        "overall_reachable_rate": 0.8270540763070318,
+        "state_count": 256
+      },
+      "evaluated_states": 256,
+      "geometric_valid_action_count": 7604,
+      "greedy_first_choice_reachable_rate": 0.875,
+      "greedy_first_choice_unreachable_rate": 0.125,
+      "mask_timing": "live_boundary_once_reused_for_next_acting_and_replay",
+      "masked_physical_u_count": 0,
+      "mixed_state_greedy_reachable_rate": 0.825136612021858,
+      "mixed_states": 183,
+      "oracle_elapsed_seconds": 0.0,
+      "oracle_implementation_version": "single-bfs-perf-v2",
+      "planner_semantics_version": "native-0.3.1-bfs-v1",
+      "reachability_mask_mode": "geometric",
+      "reachable_action_count": 6061,
+      "reachable_fraction": 0.7970804839558128,
+      "replay_mask_format": "optional_owned_bool800_v1",
+      "selected_physical_u_count": 32,
+      "uncertainty_policy": "abort_before_replay"
+    },
+    "oracle": {
+      "analytical_random_reference": {
+        "mixed_state_count": 183,
+        "mixed_state_reachable_rate": 0.7580647187683067,
+        "overall_reachable_rate": 0.8270540763070318,
+        "state_count": 256
+      },
+      "evaluated_states": 256,
+      "geometric_valid_action_count": 7604,
+      "greedy_first_choice_reachable_rate": 1.0,
+      "greedy_first_choice_unreachable_rate": 0.0,
+      "mask_timing": "live_boundary_once_reused_for_next_acting_and_replay",
+      "masked_physical_u_count": 1543,
+      "mixed_state_greedy_reachable_rate": 1.0,
+      "mixed_states": 183,
+      "oracle_elapsed_seconds": 11.985752342000012,
+      "oracle_implementation_version": "single-bfs-perf-v2",
+      "planner_semantics_version": "native-0.3.1-bfs-v1",
+      "reachability_mask_mode": "oracle",
+      "reachable_action_count": 6061,
+      "reachable_fraction": 0.7970804839558128,
+      "replay_mask_format": "optional_owned_bool800_v1",
+      "selected_physical_u_count": 0,
+      "uncertainty_policy": "abort_before_replay"
+    }
+  },
+  "inference": {
+    "geometric": {
+      "mode": "research",
+      "epsilon": 0,
+      "reachability_mask_mode": "geometric",
+      "inference_semantics": "geometric_top1_self_loop",
+      "checkpoint_sha256_before": "fb9a05a6e274f1884ff6f27a08935f89c664d7b1d0de010732d84cdcb9072085",
+      "device": "cpu",
+      "requested_episodes": 1,
+      "max_placements": 100,
+      "max_decisions": 6,
+      "seed_start": 100000,
+      "training": false,
+      "trainer_constructed": false,
+      "optimizer_steps": 0,
+      "replay_updates": 0,
+      "episodes": [
+        {
+          "episode": 1,
+          "env_seed": 100000,
+          "placements": 2,
+          "lines": 0,
+          "decisions": 6,
+          "unreachable_count": 4,
+          "planner_call_count": 6,
+          "oracle_computation_count": 0,
+          "oracle_elapsed_seconds": 0.0,
+          "reachable_action_count": 0,
+          "geometric_valid_action_count": 0,
+          "masked_physical_u_count": 0,
+          "selected_physical_u_count": 0,
+          "terminated": false,
+          "truncated": true,
+          "stop_reason": "TRUNCATED",
+          "diagnostic": null
+        }
+      ],
+      "checkpoint_sha256_after": "fb9a05a6e274f1884ff6f27a08935f89c664d7b1d0de010732d84cdcb9072085",
+      "checkpoint_unchanged": true,
+      "weights_unchanged": true,
+      "no_gradients": true,
+      "network_forward_count": 6,
+      "status": "COMPLETED"
+    },
+    "oracle": {
+      "mode": "research",
+      "epsilon": 0,
+      "reachability_mask_mode": "oracle",
+      "inference_semantics": "single_bfs_mask_argmax_witness",
+      "checkpoint_sha256_before": "b809fe689a754896e15878c166790cfaa38807b00dfea844776f7295ce6b84c1",
+      "device": "cpu",
+      "requested_episodes": 1,
+      "max_placements": 100,
+      "max_decisions": 6,
+      "seed_start": 100000,
+      "training": false,
+      "trainer_constructed": false,
+      "optimizer_steps": 0,
+      "replay_updates": 0,
+      "episodes": [
+        {
+          "episode": 1,
+          "env_seed": 100000,
+          "placements": 6,
+          "lines": 0,
+          "decisions": 6,
+          "unreachable_count": 0,
+          "planner_call_count": 0,
+          "oracle_computation_count": 7,
+          "oracle_elapsed_seconds": 0.4990154339999435,
+          "reachable_action_count": 169,
+          "geometric_valid_action_count": 178,
+          "masked_physical_u_count": 9,
+          "selected_physical_u_count": 0,
+          "terminated": false,
+          "truncated": true,
+          "stop_reason": "TRUNCATED",
+          "diagnostic": null
+        }
+      ],
+      "checkpoint_sha256_after": "b809fe689a754896e15878c166790cfaa38807b00dfea844776f7295ce6b84c1",
+      "checkpoint_unchanged": true,
+      "weights_unchanged": true,
+      "no_gradients": true,
+      "network_forward_count": 6,
+      "status": "COMPLETED"
+    }
+  },
+  "dependency_install": {
+    "locked_wheels": 30,
+    "downloaded_installed_wheels": 30,
+    "hashes_exact": true,
+    "pip_check": true,
+    "cache_reused": false
+  },
+  "candidate_tested_code_hash_match_files": 150
+}

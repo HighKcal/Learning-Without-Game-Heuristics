@@ -1,0 +1,11 @@
+--- upstream/envs/tetris.py
++++ validated/envs/tetris.py
+@@ -333,7 +333,7 @@
+         v_padding = np.ones((board_obs.shape[0] - 2 * max_size, max_len))
+         cnn_extra = np.vstack((queue_obs, v_padding, holder_obs))
+ 
+-        stack = np.hstack((board_obs, cnn_extra)).astype(np.integer)
++        stack = np.hstack((board_obs, cnn_extra)).astype(int)
+ 
+         # Convert to RGB
+         rgb = np.zeros((stack.shape[0], stack.shape[1], 3))

@@ -1,0 +1,150 @@
+{
+  "commit": "f78017e0a1ac831c2fcd0bc74dcc0d546f19822e",
+  "purpose": "Independent pre-perf-v2 Oracle learner reference for synthetic update equivalence; never a production import root",
+  "files": [
+    {
+      "original_path": "src/tetris_agent/__init__.py",
+      "fixture_path": "__init__.py",
+      "sha256": "1ceb65fddb9a67517135ba4e5c25a61b4b3f0dd3d2d426299687690c3306d436",
+      "bytes": 1083
+    },
+    {
+      "original_path": "src/tetris_agent/_lock_verification.py",
+      "fixture_path": "_lock_verification.py",
+      "sha256": "18261bfa6037b06e2d061d56cce60aa7a249f4592dbd75ffb739e195f9d1e189",
+      "bytes": 809
+    },
+    {
+      "original_path": "src/tetris_agent/env_adapter.py",
+      "fixture_path": "env_adapter.py",
+      "sha256": "85bbf6fc38bd83eee38f59273fc29b330531186a84585330d60935717e93846e",
+      "bytes": 3650
+    },
+    {
+      "original_path": "src/tetris_agent/executor.py",
+      "fixture_path": "executor.py",
+      "sha256": "1e6e28b2a9456553eb798aef0f5291d399870dba68873919abe201fbbb8bf1c0",
+      "bytes": 7127
+    },
+    {
+      "original_path": "src/tetris_agent/game_runner.py",
+      "fixture_path": "game_runner.py",
+      "sha256": "adeaee5cdde19722ba716b389e3a37d74d1e2989db49bc5692f8a21a18943804",
+      "bytes": 9879
+    },
+    {
+      "original_path": "src/tetris_agent/planner.py",
+      "fixture_path": "planner.py",
+      "sha256": "c7c112cea002afeedcc26261cd2904d9ea2dff76f3d4d3b6b9031245a114ab40",
+      "bytes": 12588
+    },
+    {
+      "original_path": "src/tetris_agent/random_decision.py",
+      "fixture_path": "random_decision.py",
+      "sha256": "9ffad42c1235573d77813d83801038ae708c338dc7b3a516a8f4963c6139c313",
+      "bytes": 1768
+    },
+    {
+      "original_path": "src/tetris_agent/rl/__init__.py",
+      "fixture_path": "rl/__init__.py",
+      "sha256": "a625c044aeca2629a0ff4470dc5324fe210552f743c103e834320609946f388d",
+      "bytes": 1358
+    },
+    {
+      "original_path": "src/tetris_agent/rl/artifacts.py",
+      "fixture_path": "rl/artifacts.py",
+      "sha256": "27569e81fffd494aa1d0466da0cbfc0bd80e7c4d014ec4ded02d95a84719e544",
+      "bytes": 7297
+    },
+    {
+      "original_path": "src/tetris_agent/rl/config.py",
+      "fixture_path": "rl/config.py",
+      "sha256": "14d00ebc6e45ec2270cac30d3b008e07a4a5a6831f2e4bfe9d47f041769b59d5",
+      "bytes": 3321
+    },
+    {
+      "original_path": "src/tetris_agent/rl/dqn.py",
+      "fixture_path": "rl/dqn.py",
+      "sha256": "5a2621c300da13c9530915f707cd4836f31441c57c97e416489c0bf37ad70b80",
+      "bytes": 6677
+    },
+    {
+      "original_path": "src/tetris_agent/rl/evaluation.py",
+      "fixture_path": "rl/evaluation.py",
+      "sha256": "9a81f020f2031bc13eb8a8f30460ee4a40ffac8cd216fd504849b76e2e822410",
+      "bytes": 17295
+    },
+    {
+      "original_path": "src/tetris_agent/rl/evaluation_build.py",
+      "fixture_path": "rl/evaluation_build.py",
+      "sha256": "bedb3105e5ddcebde8ad8849aa9b4afbcd870e94f9bcb23635d9a212ecfa5dab",
+      "bytes": 18616
+    },
+    {
+      "original_path": "src/tetris_agent/rl/formal_random.py",
+      "fixture_path": "rl/formal_random.py",
+      "sha256": "e0527f37dc04744483bb2402106b7fcbd436937169d3c4e62f9fd61a99b2aae8",
+      "bytes": 12381
+    },
+    {
+      "original_path": "src/tetris_agent/rl/metrics.py",
+      "fixture_path": "rl/metrics.py",
+      "sha256": "8a518c77128019350e020639aaa1afe634fe2dee2167c54e8da023882f34e633",
+      "bytes": 2242
+    },
+    {
+      "original_path": "src/tetris_agent/rl/network.py",
+      "fixture_path": "rl/network.py",
+      "sha256": "279141e8d72db15999f0199d95808974b5c788249cb3dba19cb6593f5368acfa",
+      "bytes": 268
+    },
+    {
+      "original_path": "src/tetris_agent/rl/oracle.py",
+      "fixture_path": "rl/oracle.py",
+      "sha256": "10acaa50256701ce80e3ad6e0152f8e5875713ae510abe7dc1569ab42e948adf",
+      "bytes": 3652
+    },
+    {
+      "original_path": "src/tetris_agent/rl/policy.py",
+      "fixture_path": "rl/policy.py",
+      "sha256": "c20e25b55e613b26baa9f44be5e958f44205124444e8bd36b06ea4d0099b0e9b",
+      "bytes": 1644
+    },
+    {
+      "original_path": "src/tetris_agent/rl/replay.py",
+      "fixture_path": "rl/replay.py",
+      "sha256": "774436c85b9aba425dec296eb0b91a80342b08a38a3366b450fda472864cdef0",
+      "bytes": 2082
+    },
+    {
+      "original_path": "src/tetris_agent/rl/reward.py",
+      "fixture_path": "rl/reward.py",
+      "sha256": "b7e9e9506eb7a314186089a0e4f5961194b0be122aac491df853ef78a9f9cef6",
+      "bytes": 1311
+    },
+    {
+      "original_path": "src/tetris_agent/rl/runner.py",
+      "fixture_path": "rl/runner.py",
+      "sha256": "5f7b5919ca8d6360052b860efb21dfa479dca88fc2194c0fcf681bc2522b74e3",
+      "bytes": 9891
+    },
+    {
+      "original_path": "src/tetris_agent/rl/state.py",
+      "fixture_path": "rl/state.py",
+      "sha256": "2ba974a02fc93cb6c5f09e6daeeffd515e8e26435dd616dd06379badd694d1ae",
+      "bytes": 5136
+    },
+    {
+      "original_path": "src/tetris_agent/rl/training.py",
+      "fixture_path": "rl/training.py",
+      "sha256": "fbc8dbf6c82354698bcada5520811025e0c476e83be620705e5143b51ee416c1",
+      "bytes": 7311
+    },
+    {
+      "original_path": "src/tetris_agent/target_space.py",
+      "fixture_path": "target_space.py",
+      "sha256": "1a27ca34d3bfee5eb59a69e66ce833eaeed92825045991d0e59a9e091cda0992",
+      "bytes": 7693
+    }
+  ]
+}

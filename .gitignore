@@ -1,0 +1,24 @@
+# 로컬 학습 산출물·모델·개인환경을 공개 후보에서 제외
+.venv*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+outputs/
+runs/
+analysis/
+benchmarks/
+archive/
+scratch/
+_validation/
+_migration/
+*.pt
+*.pth
+*.onnx
+*.exe
+*.dll
+*.zip
+*.bundle
+*.prof
+*.log
+.env*
+!*.example
