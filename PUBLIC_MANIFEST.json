@@ -31,7 +31,7 @@
     {
       "path": "CODE_PROVENANCE.json",
       "bytes": 79229,
-      "sha256": "5d8fc5ed1c45ee509d8f5225a88df8a906e0270c32b8875c990ac76e0396cf67",
+      "sha256": "46656440636bb2562ca11b59228778986acdac61b4d774b61a435172ab4a4fc7",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "9d488dfdf96c6c1632e1ba8c8e5eaf4645b22f22ad054bd58fa7854e4f7c06e7",
       "byte_identical_to_candidate": false
@@ -74,8 +74,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 12964,
-      "sha256": "03f268a48eb04482025d097d3b38b201889d173a9868fa51f085a29e10d9e333",
+      "bytes": 12838,
+      "sha256": "e4df1b05a9752c4d54bf61f199bc7357c7ed19ca9652605b34a66938c93f60b9",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "8512fa48f0a06bafaf62bc85387b679f964dfe4d0ea0855868d525573607d971",
       "byte_identical_to_candidate": false
@@ -138,8 +138,8 @@
     },
     {
       "path": "docs/MODEL_RELEASE_GUIDE.md",
-      "bytes": 7702,
-      "sha256": "06869e285f4c89bfb5c2106d2a0d067f9d70ca80b384778ff95b0f51ec46d663",
+      "bytes": 7562,
+      "sha256": "61aabaa6a153fca6f634cdff38922b17921bb4da271dc0e47180bbadbb420a11",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "acd46c6b5e9ff054410e4e3eefa126caf2a9e34d569b4dbf41fca5d9b9f8e80f",
       "byte_identical_to_candidate": false

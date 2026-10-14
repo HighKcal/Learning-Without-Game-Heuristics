@@ -52,16 +52,16 @@ Rawlogs와내부실제경로는비공개감사에있고공개결과는 [PHASE4_5
 
 ```bash
 mkdir ../downloaded-models
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-baseline-seed123-100k-final.pt' --output '../downloaded-models/Temeong-geometric-baseline-seed123-100k-final.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-penalty020-seed42-500k-final.pt' --output '../downloaded-models/Temeong-geometric-penalty020-seed42-500k-final.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-final.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-periodic-500000.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-final.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-300000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-300000.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-500000.pt'
-curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/SHA256SUMS' --output '../downloaded-models/SHA256SUMS'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-geometric-baseline-seed123-100k-final.pt' --output '../downloaded-models/Temeong-geometric-baseline-seed123-100k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-geometric-penalty020-seed42-500k-final.pt' --output '../downloaded-models/Temeong-geometric-penalty020-seed42-500k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed123-500k-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed123-500k-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed123-500k-periodic-500000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-final.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-final.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-300000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-300000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-500000.pt' --output '../downloaded-models/Temeong-oracle_mask-seed42-2m-periodic-500000.pt'
+curl --fail --location 'https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/SHA256SUMS' --output '../downloaded-models/SHA256SUMS'
 (cd ../downloaded-models && sha256sum -c SHA256SUMS)
 python -B scripts/install_model_assets.py --asset-dir ../downloaded-models --artifact-root ../model-artifacts
 ```

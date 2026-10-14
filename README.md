@@ -91,15 +91,15 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/play_agent.py --checkpoint
 
 | 원본 모델 Asset | 다운로드 |
 | --- | --- |
-| `Temeong-geometric-baseline-seed123-100k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-baseline-seed123-100k-final.pt) |
-| `Temeong-geometric-penalty020-seed42-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-geometric-penalty020-seed42-500k-final.pt) |
-| `Temeong-oracle_mask-seed123-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-final.pt) |
-| `Temeong-oracle_mask-seed123-500k-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed123-500k-periodic-500000.pt) |
-| `Temeong-oracle_mask-seed42-2m-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-final.pt) |
-| `Temeong-oracle_mask-seed42-2m-periodic-1000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt) |
-| `Temeong-oracle_mask-seed42-2m-periodic-2000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt) |
-| `Temeong-oracle_mask-seed42-2m-periodic-300000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-300000.pt) |
-| `Temeong-oracle_mask-seed42-2m-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/untagged-67b1de387f814ca4e717/Temeong-oracle_mask-seed42-2m-periodic-500000.pt) |
+| `Temeong-geometric-baseline-seed123-100k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-geometric-baseline-seed123-100k-final.pt) |
+| `Temeong-geometric-penalty020-seed42-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-geometric-penalty020-seed42-500k-final.pt) |
+| `Temeong-oracle_mask-seed123-500k-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed123-500k-final.pt) |
+| `Temeong-oracle_mask-seed123-500k-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed123-500k-periodic-500000.pt) |
+| `Temeong-oracle_mask-seed42-2m-final.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-final.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-1000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-1000000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-2000000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-2000000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-300000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-300000.pt) |
+| `Temeong-oracle_mask-seed42-2m-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-500000.pt) |
 
 
 공식 Release에서9개 `.pt`를 한 다운로드 폴더에 모으고 소스 root에서 설치한다. helper는 manifest와 Registry의 목록·role·경로·size·SHA256을 모두 확인한 후 새 artifact root에 복사한다.

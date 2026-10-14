@@ -128,7 +128,7 @@
       "category": "phase4_5_documentation_or_audit_metadata",
       "evidence_basis": "이번감사기록·실제검증결과; 사용자공개승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
-      "sha256": "06869e285f4c89bfb5c2106d2a0d067f9d70ca80b384778ff95b0f51ec46d663"
+      "sha256": "61aabaa6a153fca6f634cdff38922b17921bb4da271dc0e47180bbadbb420a11"
     },
     {
       "path": "docs/models.md",
@@ -363,7 +363,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "03f268a48eb04482025d097d3b38b201889d173a9868fa51f085a29e10d9e333",
+      "sha256": "e4df1b05a9752c4d54bf61f199bc7357c7ed19ca9652605b34a66938c93f60b9",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
