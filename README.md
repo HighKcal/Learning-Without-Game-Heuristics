@@ -6,7 +6,7 @@
 
 환경은 Maximilian Weichart의 오픈소스 `Tetris-Gymnasium 0.3.1`과 고지된 Viet Nguyen의 일부 game logic을 기반으로 한다. 원 MIT 출처·고지를 보존했고 render dtype 한 줄을 기존 연구 조건대로 수정했다. 공식 Tetris 브랜드와 제휴·승인된 프로젝트라는 의미가 아니다. Windows GUI 테멍은 별도 프로젝트다.
 
-연구 코드·문서·Fixture와 직접 학습한 Checkpoint9개는 **MIT**로 제공한다. 원본 모델은 Git 이력에 넣지 않고 별도 Release Asset으로 배포한다. 모델이 없어도 새 학습을 실행할 수 있다. GUI·Windows EXE·아이콘·비공개 연구 원본은 이번 공개에 포함하지 않는다.
+연구 코드·문서·Fixture와 직접 학습한 Checkpoint 9개는 **MIT**로 제공한다. 원본 모델은 Git 이력에 넣지 않고 별도 Release Asset으로 배포한다. 모델이 없어도 새 학습을 실행할 수 있다. GUI·Windows EXE·아이콘·비공개 연구 원본은 이번 공개에 포함하지 않는다.
 
 ## 무엇을 연구했나
 
@@ -76,6 +76,33 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/evaluate_policy.py --datas
 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/play_agent.py --checkpoint outputs/oracle_smoke_new/checkpoint_final.pt --mode research --reachability-mask oracle --episodes 1 --max-decisions 6 --device cpu --output outputs/oracle_inference_new
 ```
 
+일반 학습의 가장 짧은 실행 예시다. Production warmup 5000을 지나도록 6000 decisions를 지정한다. 수렴·성능 검증용 budget은 아니다.
+
+```bash
+OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/train_rl.py --algorithm double --reward minimal --decision-budget 6000 --seed 123 --device cpu --reachability-mask geometric --output-dir outputs/geometric_train_new
+```
+
+## 테스트와 CPU CI
+
+위 CPU 설치와 Native 검증을 마친 venv에서 소스 root의 기본 명령은 다음과 같다.
+
+```bash
+pytest -q
+python -B scripts/verify_public_integrity.py
+```
+
+비공개 역사 입력이 필요한 검사는 `historical_diagnostic` marker로 분류하고 기본 실행에서 skip한다. 두 진단 모듈의 공개 소스만 쓰는 단위 검사는 계속 실행한다. 역사 진단의 별도 opt-in과 필요한 자료는 [WSL 테스트 안내](docs/WSL_TRAINING.md#4-공개-테스트와-역사-진단)에 있다. 공개 테스트 PASS는 전체 역사 진단 PASS를 의미하지 않는다.
+
+[공개 연구 CPU Workflow](.github/workflows/research-cpu.yml) · [GitHub Actions 실행 결과](https://github.com/HighKcal/Learning-Without-Game-Heuristics/actions/workflows/research-cpu.yml). Workflow는 이번 패치에 준비했으며 원격 첫 실행은 아직 확인하지 않았다. 승인 후 반영되면 이 링크에서 실제 결과를 확인할 수 있다.
+
+기존 [WSL 기능 검증](docs/WSL_REPRODUCIBILITY_REPORT.md)에서 확인한 Smoke 출력의 주요 필드는 아래와 같다. Geometric·Oracle 각각 새 학습의 설치·업데이트·재로딩 검사이며 연구 성능 수치가 아니다.
+
+```json
+{"decision_count": 32, "stored_experiences": 32, "gradient_updates": 29, "target_sync_count": 3, "passed": true}
+```
+
+패치 범위·새 로컬 검증 결과·남은 gate는 [Quality Pass 보고서](docs/POST_RELEASE_QUALITY_REPORT.md)에 기록한다. 소스 패치 `research-v1.0.1`은 준비 중이며 모델 다운로드는 기존 `research-v1.0.0`을 계속 사용한다.
+
 ## 직접 학습한 모델 9개
 
 사용자는 pretrained 모델 없이 무작위 초기화에서 개인 PC로 DDQN을 학습했고 replay를 게임 환경에서 생성했다. 코드·payload가 이 설명에 부합하지만 과거 초기 weights·완전한 실행 provenance가 모두 저장된 것은 아니다.
@@ -87,7 +114,7 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/play_agent.py --checkpoint
 | Oracle | 123 / 500K | periodic500K, final 2개 |
 | Oracle | 42 / 2M | periodic300K/500K/1M/2M, final 5개 |
 
-**9개를 개별 GitHub Release Asset으로 배포한다.** [research-v1.0.0 Release](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에 모델9개와MIT·해시·한국어model cards를게시했다. 원 bytes·역할·SHA256을 유지한다. [모델 목록](docs/models.md) · [모델별 설정·평가·한계](docs/MODEL_CARDS.md) · [Asset 이름/배치 경로/해시](MODEL_RELEASE_MANIFEST.json). 같은 budget의 final과 periodic은 다른 파일로 구분한다.
+**9개를 개별 GitHub Release Asset으로 공개했다.** [research-v1.0.0 Release](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에 모델 9개와 MIT·해시·한국어 model cards를 게시했다. 원 bytes·역할·SHA256을 유지한다. [모델 목록](docs/models.md) · [모델별 설정·평가·한계](docs/MODEL_CARDS.md) · [Asset 이름/배치 경로/해시](MODEL_RELEASE_MANIFEST.json). 같은 budget의 final과 periodic은 다른 파일로 구분한다.
 
 | 원본 모델 Asset | 다운로드 |
 | --- | --- |
@@ -102,7 +129,7 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/play_agent.py --checkpoint
 | `Temeong-oracle_mask-seed42-2m-periodic-500000.pt` | [다운로드](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/download/research-v1.0.0/Temeong-oracle_mask-seed42-2m-periodic-500000.pt) |
 
 
-공식 Release에서9개 `.pt`를 한 다운로드 폴더에 모으고 소스 root에서 설치한다. helper는 manifest와 Registry의 목록·role·경로·size·SHA256을 모두 확인한 후 새 artifact root에 복사한다.
+공식 Release에서 9개 `.pt`를 한 다운로드 폴더에 모으고 소스 root에서 설치한다. helper는 manifest와 Registry의 목록·role·경로·size·SHA256을 모두 확인한 후 새 artifact root에 복사한다.
 
 ```bash
 python -B scripts/install_model_assets.py --asset-dir ../downloaded-models --artifact-root ../model-artifacts
@@ -115,7 +142,7 @@ OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B scripts/evaluate_policy.py --datas
 
 ## Windows GUI 테멍
 
-별도 GUI는 frozen 모델을 이용해 실행을 관찰하는 Windows 앱이다. V2.4.3의 빌드·추론·자동 GUI 검증은 기존 보고서에서 통과했으나 **공개 Beta는 NO-GO**다. 소스·모델·아이콘 권한과 Qt/MSVC/Intel 등 바이너리 재배포 조건, 새 Windows 검증이 남아 있다. [GUI 관계와 통합 계획](docs/gui.md)
+별도 GUI는 frozen 모델을 이용해 실행을 관찰하는 Windows 앱이다. V2.4.3의 빌드·추론·자동 GUI 검증은 기존 보고서에서 통과했으나 **공개 Beta는 NO-GO**다. 연구 소스·모델 9개는 공개됐지만, GUI 자체의 소스·아이콘·번들 권한과 Qt/MSVC/Intel 등 바이너리 재배포 조건, 새 Windows 검증이 남아 있다. [GUI 관계와 통합 계획](docs/gui.md)
 
 ## 프로젝트 구조
 
@@ -128,13 +155,13 @@ requirements/                 CPU 30 / CUDA 49 wheel 해시 lock
 vendor/native_tetris_031/      수정 Native Python 19개·원 MIT 고지
 evaluation/fixed_eval_final_v1/ 선별 256-state 평가 fixture
 docs/                         한국어 연구 문서·공개용 DEVLOG·결과 집계
-PUBLIC_ALLOWLIST.txt           공개 후보 파일의 명시 목록
+PUBLIC_ALLOWLIST.txt           공개 파일의 명시 목록
 ```
 
 81 records는 독립 학습 81회를 뜻하지 않는다. 80개 run/context와 logical S2 sequence 1개다. 전체 Canonical, 비공개 분석, 과거 worktree, runtime, Git/LFS 이력은 포함하지 않는다.
 
 ## 라이선스와 출처
 
-사용자 보유 연구 코드·문서·Fixture는 [MIT LICENSE](LICENSE), 직접 학습한9개 모델은 별도 [MIT MODEL_LICENSE](MODEL_LICENSE.txt)를 적용한다. Copyright (c) 2026 HighKcal. 범위와 감사 근거는 [권리·공개 문서](docs/licensing.md)에 있다. 원 Native의 MIT LICENSE와 Maximilian Weichart / Viet Nguyen attribution은 보존했다. [제3자 고지](THIRD_PARTY_NOTICES.md). Native 상류 고지가 프로젝트 수정분·모델·GUI 자산 전체의 배포 승인을 대신하지 않는다.
+사용자 보유 연구 코드·문서·Fixture는 [MIT LICENSE](LICENSE), 직접 학습한 9개 모델은 별도 [MIT MODEL_LICENSE](MODEL_LICENSE.txt)를 적용한다. Copyright (c) 2026 HighKcal. 범위와 감사 근거는 [권리·공개 문서](docs/licensing.md)에 있다. 원 Native의 MIT LICENSE와 Maximilian Weichart / Viet Nguyen attribution은 보존했다. [제3자 고지](THIRD_PARTY_NOTICES.md). Native 상류 고지가 프로젝트 수정분·모델·GUI 자산 전체의 배포 승인을 대신하지 않는다.
 
 [Phase 4.5 최종 감사](PHASE4_5_RESEARCH_MODEL_RELEASE_AUDIT.md) · [사용자 승인 목록](docs/RELEASE_APPROVALS.md) · [Phase 4 준비 기록](docs/PHASE4_GITHUB_PUBLIC_PREPARATION_REPORT.md)

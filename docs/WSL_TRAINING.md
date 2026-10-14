@@ -1,6 +1,6 @@
 # WSL2에서 설치·학습·평가·추론하기
 
-Ubuntu24.04 x86_64 / CPython **3.12.10** 기준이다. 소스는 Linux home의 새 디렉터리, venv·출력도 새 경로를 사용한다. 검증 source는 `codex/research-staging-integration`의 `3801e53c`에서 선별한 공개 후보다. Private Git bundle·이력·Windows venv를 설치 입력으로 사용하지 않는다. 공개 source는 GitHub main에서 Clone한다. 모델은 별도 Release Asset이며 전체 private 데이터가 필요하지 않다.
+Ubuntu24.04 x86_64 / CPython **3.12.10** 기준이다. 소스는 Linux home의 새 디렉터리, venv·출력도 새 경로를 사용한다. 현재 연구 source는 GitHub에 공개됐다. 연구 원본 provenance는 `3801e53c`에서 선별한 소스이며, 현재 설치 입력은 공개 저장소의 `main` 또는 지정된 Release tag다. Private Git bundle·이력·Windows venv를 설치 입력으로 사용하지 않는다. 공개 source는 GitHub main에서 Clone한다. 모델은 별도 Release Asset이며 전체 private 데이터가 필요하지 않다.
 
 ## 1. Python과 소스 준비
 
@@ -59,14 +59,34 @@ Native package version0.3.1만으로 충분하지 않다. Vendor19 Python source
 
 Train/smoke/evaluate CLI는 Native preflight를 실행한다. `play_agent.py` 직접 checkpoint CLI는 Registry façade가 아니므로 **위 Native 검증을 먼저 실행**한다. Registry `infer_agent.py`는 profile/hash/지원 CPU 계약을 자체 확인한다.
 
-## 4. 전체 테스트
+## 4. 공개 테스트와 역사 진단
+
+설치·Native 검증을 마친 venv의 소스 root에서 실행한다. 수동 `--ignore`는 필요 없다.
 
 ```bash
 unset TETRIS_ARTIFACT_ROOT PYTHONPATH
-OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 python -B -m pytest -q -p no:cacheprovider --basetemp="$(mktemp -d)/pytest" --ignore=tests/test_u_competing_actions_diagnostic.py --ignore=tests/test_u_feedback_timing_diagnostic.py
+pytest -q
+python -B scripts/verify_public_integrity.py
 ```
 
-제외된 두 모듈34 historical diagnostic cases는 비공개 trained checkpoints를 복원해 optimizer update하는 과거 진단이다. 공개 snapshot의 모델 없이 실행 가능한 suite와 구분한다. 나머지 tests는 합성·임시 모델을 사용한다. Oracle pre-perf-v2 reference fixture는 검증용 선별 Python 소스이며 과거 worktree/Git history 사본이 아니다.
+`test_u_competing_actions_diagnostic.py`와 `test_u_feedback_timing_diagnostic.py`에는 공개 소스만 사용하는 단위 검사와 비공개 자료가 필요한 역사 검사가 함께 있다. `tests/conftest.py`가 비공개 fixture 또는 직접 파일 읽기를 사용하는 case만 `historical_diagnostic`으로 분류한다. 기본 실행은 해당 case를 skip하고 공개 단위 검사를 실행한다. 기존 두 파일·진단 스크립트는 저장된 implementation hash 계약을 위해 그대로 보존한다.
+
+역사 진단 opt-in은 다음과 같다. `-m`만 지정하면 기본 skip을 해제하지 않으므로 반드시 옵션도 함께 사용한다.
+
+```bash
+pytest -q --run-historical-diagnostics -m historical_diagnostic
+# 공개 검사만 선택하고 skip 항목을 deselect하려면:
+pytest -q -m "not historical_diagnostic"
+```
+
+공개 clone에는 아래 과거 입력이 없으므로 opt-in은 자료 누락 오류로 실패한다. 누락을 PASS로 처리하거나 공개 모델 9개로 대체하지 않는다. opt-in은 원본 보관자가 승인된 자료를 별도의 격리 checkout에 읽기 전용 입력으로 갖춘 경우에만 쓴다. CI는 이 옵션을 켜지 않는다.
+
+- Feedback timing: 두 seed 42/123의 과거 penalty020 100K checkpoint, `analysis/geometric/frozen_gameplay`의 해당 traps·traces·states·episodes.
+- Competing actions: 저장된 `analysis/geometric/feedback_timing/manifest.json`, seed별 schedule·RNG와 manifest가 지정하는 동일 입력·implementation hash. 두 진단이 요구하는 checkpoint 상대 경로도 서로 다르므로 기존 loader 계약을 따른다.
+
+역사 검사는 원본 hash·schedule·optimizer 복원 조건을 검증한다. 경로를 바꾸거나 manifest를 재생성해서 통과시키지 않는다. 실행 방법 제공은 이번 패치에서 역사 진단을 재실행했다는 뜻이 아니다. 공개 테스트 PASS와 전체 역사 진단 PASS를 구분한다.
+
+공개 tests는 합성·임시 모델을 사용한다. Oracle pre-perf-v2 reference fixture는 검증용 선별 Python 소스이며 과거 worktree/Git history 사본이 아니다. [CPU CI](../.github/workflows/research-cpu.yml)는 Ubuntu 24.04 / Python 3.12.10 새 venv에서 같은 CPU lock·Native 검사·공개 테스트·두 Smoke를 실행한다. [새 로컬 검증 범위](POST_RELEASE_QUALITY_REPORT.md)와 원격 CI 실행 여부는 별도로 기록한다.
 
 ## 5. 새 Geometric / Oracle Smoke 학습
 
@@ -107,8 +127,8 @@ python -B scripts/infer_agent.py --experiment oracle_mask.seed42.2m --role final
 
 Missing/hash mismatch/pending/unsupported는 오류로 종료한다. 지원4 experiments/9 checkpoints이며 final/periodic을 합치지 않는다. Registry validated device는 **CPU**다. CUDA forward·fresh CUDA 학습 가능성이 Registry CUDA support 승격을 의미하지 않는다.
 
-검증 범위는 [WSL 보고서](WSL_REPRODUCIBILITY_REPORT.md), 새 Phase4 결과는 [준비 보고서](PHASE4_GITHUB_PUBLIC_PREPARATION_REPORT.md)에 있다. [모델 계획](models.md)·[license gate](licensing.md)
+검증 범위는 [WSL 보고서](WSL_REPRODUCIBILITY_REPORT.md), 새 Phase4 결과는 [준비 보고서](PHASE4_GITHUB_PUBLIC_PREPARATION_REPORT.md)에 있다. [공개 모델 목록](models.md)·[license gate](licensing.md)
 
-## 9. Phase4.5의9개모델 배치
+## 9. 공개 모델 9개 배치
 
-Phase4.5의모델은코드와별도ReleaseAsset후보다. 승인된9개를받으면`install_model_assets.py`로size/hash/Registry를검사해새root에배치한다. [모델배포가이드](MODEL_RELEASE_GUIDE.md)와[보안주의](CHECKPOINT_SECURITY.md)를따른다. 위1~7절의모델없는신규학습·평가경로는유지한다.
+원본 모델 9개는 [research-v1.0.0 Release](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에 별도 MIT·SHA256·한국어 model cards와 함께 공개됐다. 9개를 내려받으면 `install_model_assets.py`로 size/hash/Registry를 검사해 새 root에 배치한다. [모델배포가이드](MODEL_RELEASE_GUIDE.md)와[보안주의](CHECKPOINT_SECURITY.md)를따른다. 위1~7절의모델없는신규학습·평가경로는유지한다.
