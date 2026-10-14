@@ -2,6 +2,8 @@
 
 Registry는 [experiments/index.yaml](../experiments/index.yaml)이며 81 records=80 run/context+logical S2 sequence 1이다. 로컬 존재, CPU 추론 지원, 모델 배포 승인은 별도 상태다. S1~S4의 구현·raw run은 비공개 archive에 보존하고 production 소스에는 통합하지 않았다.
 
+연구 소스와 지원 모델 9개는 공개 완료됐고 모델은 [research-v1.0.0 Release](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0)에서 제공한다. 이번 [Quality Pass 기능 검증](POST_RELEASE_QUALITY_REPORT.md)은 아래 역사 결과와 구분한다.
+
 아래는 과거 결과를 정리한 표다. 신규 학습 성과가 아니다. U는 confirmed physical UNREACHABLE이며 UNKNOWN/error를 분자에 넣지 않는다. Training occurrence, fixed-state greedy, frozen gameplay, fallback Play는 분모가 다르다.
 
 | 실험 / 가설 | 변경 변수·조건 | 실제 결과 | 해석·한계 |

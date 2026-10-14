@@ -6,10 +6,11 @@
   "records": [
     {
       "path": ".gitattributes",
-      "sha256": "0febee68c101acc3a77f18ce3bbbf6e0ec0457ccbfc13a9fd1a5802835c89315",
+      "sha256": "42602662d3046c77f8acd647a2eb9b98c1ea0fca44f8a21ab2d2a028a81afba3",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": ".gitignore",
@@ -48,10 +49,11 @@
     },
     {
       "path": "docs/devlog.md",
-      "sha256": "96cd9006ae8fdace6dc3cba5600bef7d0325f4a2a23ffdeb4521f0a3c9b8da2d",
+      "sha256": "08d8b49a62619630665242f81c2b32644566e1ada193961940201310385814f5",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "docs/evidence.md",
@@ -62,10 +64,11 @@
     },
     {
       "path": "docs/experiments.md",
-      "sha256": "e1f4ba18ed0453c6dcb222916e941a740c8e81c81234771eb0b1c69d27bed713",
+      "sha256": "e30f1536fae43b21946a19ab0340a0bae6d43042562cd73a0df75859b96abb02",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "docs/fixed_evaluation.md",
@@ -83,10 +86,11 @@
     },
     {
       "path": "docs/gui.md",
-      "sha256": "075c2625b2e5c590ebeb450447a6f7d81b42f4db1573b1650c846f47a0601ca7",
+      "sha256": "691200f417a171e7e60052d95cc7967d4b84adc1605a206581e9590c22965beb",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "docs/learner_performance.md",
@@ -132,10 +136,11 @@
     },
     {
       "path": "docs/models.md",
-      "sha256": "2c5e0de9062bdadf9e4f736e8839b05ed142807a5f63882cfb9ac83030c7808c",
+      "sha256": "d6b4499aece8e8973c25ce83a94a14b6fe90355685c35c4639a5a11f53c7c2ba",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "docs/PHASE4_GITHUB_PUBLIC_PREPARATION_REPORT.md",
@@ -160,10 +165,11 @@
     },
     {
       "path": "docs/publication.md",
-      "sha256": "ad4f4314ed90a13aeeb45e117a0241c261184f88d8c63f3706d83cffecef256f",
+      "sha256": "881ce4cf8496de823c49f38793ca7f2881a46d0795e847aadb7249630c3ea16d",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "docs/RELEASE_APPROVALS.md",
@@ -251,10 +257,11 @@
     },
     {
       "path": "docs/WSL_TRAINING.md",
-      "sha256": "ab3fbc1790ee3deaedd59a6460684d2bd9d91ac748fbc66171dcdfee37af3438",
+      "sha256": "b719c11ff2d994c8d82c4284f43690f4db20f4770eaea3ecc2a096434116a831",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "evaluation/fixed_eval_final_v1/freeze_gate.json",
@@ -356,17 +363,19 @@
     },
     {
       "path": "pytest.ini",
-      "sha256": "4d5193eb36807e4622451417a9fe7bea71e7307137cd05cc214332e514fd9527",
+      "sha256": "824bf104544e18f330ad17c7e2de369ce8a6067c169921a259979f42861ffce5",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "README.md",
-      "sha256": "e4df1b05a9752c4d54bf61f199bc7357c7ed19ca9652605b34a66938c93f60b9",
+      "sha256": "e764453a940693a04498c7c6aee6631290fd35f5ef14e069a52179730f1783ff",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
-      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위",
+      "maintenance_basis": "2026-10-14 Post-Release Quality Pass"
     },
     {
       "path": "requirements/linux-cpu-provenance.json",
@@ -1430,6 +1439,34 @@
       "sha256": "812a183a6971a8c6e3e1947950cf876b73b8865379f26e5151b20d4c2cdbcef6",
       "category": "project_documentation_results_or_configuration",
       "evidence_basis": "프로젝트기록·Phase4/4.5작성; 공개범위승인완료",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": ".github/workflows/research-cpu.yml",
+      "sha256": "12ec0bdcbb762e073f74c27b6ba6737aacff0a4dc9b319acd50b3700f5c714cd",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "2026-10-14 Post-Release Quality Pass; 공개 테스트·CI·문서 유지보수",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "docs/POST_RELEASE_QUALITY_REPORT.md",
+      "sha256": "ac22be824c3bde2ec6352a345a5157c89bb7af8292e0d45e8216b52f762d5b1b",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "2026-10-14 Post-Release Quality Pass; 공개 테스트·CI·문서 유지보수",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "scripts/verify_public_integrity.py",
+      "sha256": "3bcea24a0db8dcf1fe5c528ae94c47ac7fd17e01de483544f698211cec51117b",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "2026-10-14 Post-Release Quality Pass; 공개 테스트·CI·문서 유지보수",
+      "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "29543fa4d3618690b5200e224b114c4190c7f4e19f530d23f183c470d6f3d54b",
+      "category": "project_documentation_results_or_configuration",
+      "evidence_basis": "2026-10-14 Post-Release Quality Pass; 공개 테스트·CI·문서 유지보수",
       "license_status": "MIT / Copyright (c) 2026 HighKcal, 사용자보유권리범위"
     }
   ],

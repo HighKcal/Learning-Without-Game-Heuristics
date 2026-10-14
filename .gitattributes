@@ -21,3 +21,4 @@ docs/WSL_*.md -text
 .gitignore -text
 LICENSE -text
 pytest.ini -text
+.github/** text eol=lf

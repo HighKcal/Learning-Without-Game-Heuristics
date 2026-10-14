@@ -1,0 +1,80 @@
+name: 공개 연구 CPU 검증
+
+on:
+  push:
+    branches: [main, codex/post-release-polish]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: research-cpu-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  research-cpu:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    env:
+      OMP_NUM_THREADS: '1'
+      MKL_NUM_THREADS: '1'
+      PYTHONDONTWRITEBYTECODE: '1'
+      PYTHONNOUSERSITE: '1'
+      TETRIS_ARTIFACT_ROOT: ''
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - name: 공개 소스 checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - name: Python 3.12.10 준비
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7
+        with:
+          python-version: '3.12.10'
+          architecture: x64
+      - name: 새 venv와 CPU hash-lock 설치
+        run: |
+          python -c 'import sys; assert sys.version_info[:3] == (3, 12, 10)'
+          python -m venv .venv
+          echo "$GITHUB_WORKSPACE/.venv/bin" >> "$GITHUB_PATH"
+          .venv/bin/python -m pip install --require-hashes -r requirements/linux-cpu.lock
+          .venv/bin/python -m pip check
+      - name: 공개 파일 목록과 SHA256 검증
+        run: python -B scripts/verify_public_integrity.py
+      - name: 수정 Native 설치와 19개 source hash 검증
+        run: |
+          python -B scripts/install_native.py --report outputs/native_install.json
+          python -B scripts/validate_native_profile.py
+          python -B scripts/verify_wsl_runtime.py --device cpu --output outputs/runtime_cpu.json
+      - name: 공개 연구 테스트
+        run: python -B -m pytest -q
+      - name: Geometric 32-decision 학습과 optimizer·checkpoint 재로딩 검증
+        run: python -B scripts/smoke_train.py --device cpu --reachability-mask geometric --seed 123 --output-dir outputs/geometric_smoke
+      - name: Oracle 32-decision 학습과 optimizer·checkpoint 재로딩 검증
+        run: python -B scripts/smoke_train.py --device cpu --reachability-mask oracle --seed 123 --output-dir outputs/oracle_smoke
+      - name: Smoke 증거를 실행 요약에 기록
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          from pathlib import Path
+
+          rows = []
+          for mask in ('geometric', 'oracle'):
+              data = json.loads(Path(f'outputs/{mask}_smoke/smoke_evidence.json').read_text())
+              assert data['passed'] and data['decision_count'] == 32
+              assert data['gradient_updates'] == 29 and data['target_sync_count'] == 3
+              assert len(data['checkpoints']) == 3
+              assert all(c['weights_reloaded_exactly'] for c in data['checkpoints'])
+              rows.append(f"| {mask} | 32 | 29 | 3 | PASS |")
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as stream:
+              stream.write('## CPU 기능 검증\n\n')
+              stream.write('| Mask | Decisions | Optimizer updates | Target sync | Reload |\n')
+              stream.write('| --- | --- | --- | --- | --- |\n' + '\n'.join(rows) + '\n\n')
+              stream.write('공개 테스트와 새 Smoke의 기능 검증이다. 역사 진단·장기 성능 검증은 포함하지 않는다.\n')
+          PY

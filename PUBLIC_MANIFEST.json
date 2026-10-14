@@ -6,7 +6,7 @@
   "research_source_revision": "3801e53c236262b8196880b1fb7392559e91b13a",
   "private_git_history_included": false,
   "checkpoint_binary_included": false,
-  "total_files": 207,
+  "total_files": 211,
   "self_hash_excluded": true,
   "license": "MIT",
   "model_license": "MIT",
@@ -14,11 +14,18 @@
   "entries": [
     {
       "path": ".gitattributes",
-      "bytes": 541,
-      "sha256": "0febee68c101acc3a77f18ce3bbbf6e0ec0457ccbfc13a9fd1a5802835c89315",
+      "bytes": 564,
+      "sha256": "42602662d3046c77f8acd647a2eb9b98c1ea0fca44f8a21ab2d2a028a81afba3",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "34909e8ebfa88db0511b98bd090ef4d75919d90d946839e93b20625bc99d4332",
-      "byte_identical_to_candidate": true
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
+    },
+    {
+      "path": ".github/workflows/research-cpu.yml",
+      "bytes": 3408,
+      "sha256": "12ec0bdcbb762e073f74c27b6ba6737aacff0a4dc9b319acd50b3700f5c714cd",
+      "origin": "post_release_quality_pass"
     },
     {
       "path": ".gitignore",
@@ -30,11 +37,12 @@
     },
     {
       "path": "CODE_PROVENANCE.json",
-      "bytes": 79229,
-      "sha256": "5f59aea5ad37aff3efa19b75bf18f8254c61bc116d639c9000d10d401acb3d4a",
+      "bytes": 81505,
+      "sha256": "6b11d8d0bac31b6b969f70e88431d961b995a770dc73bae079521e5b1d310e81",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "9d488dfdf96c6c1632e1ba8c8e5eaf4645b22f22ad054bd58fa7854e4f7c06e7",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "LICENSE",
@@ -66,19 +74,21 @@
     },
     {
       "path": "PUBLIC_ALLOWLIST.txt",
-      "bytes": 7743,
-      "sha256": "815823cdea9b77d93dd659dfa2748cc114eb52364501ff9bde00851462062072",
+      "bytes": 7871,
+      "sha256": "a62d9815915ef5d2034916e360f4c9342188f6ee8215682337ecdce73bf7075f",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "7849999f19f5b8301fe5160bd6df93f15722cc036a01caeeaec254eb5bc079b4",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "README.md",
-      "bytes": 12838,
-      "sha256": "e4df1b05a9752c4d54bf61f199bc7357c7ed19ca9652605b34a66938c93f60b9",
+      "bytes": 14940,
+      "sha256": "e764453a940693a04498c7c6aee6631290fd35f5ef14e069a52179730f1783ff",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "8512fa48f0a06bafaf62bc85387b679f964dfe4d0ea0855868d525573607d971",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
@@ -153,6 +163,13 @@
       "byte_identical_to_candidate": false
     },
     {
+      "path": "docs/POST_RELEASE_QUALITY_REPORT.md",
+      "bytes": 14480,
+      "sha256": "ac22be824c3bde2ec6352a345a5157c89bb7af8292e0d45e8216b52f762d5b1b",
+      "origin": "post_release_quality_pass",
+      "maintenance_basis": "post_release_quality_pass"
+    },
+    {
       "path": "docs/PUBLIC_SANITIZATION.md",
       "bytes": 2300,
       "sha256": "093df15822ddb61aae88408171a3ba903f40ede07e4a5163e670ccc60f1ee90e",
@@ -186,11 +203,12 @@
     },
     {
       "path": "docs/WSL_TRAINING.md",
-      "bytes": 9230,
-      "sha256": "ab3fbc1790ee3deaedd59a6460684d2bd9d91ac748fbc66171dcdfee37af3438",
+      "bytes": 11495,
+      "sha256": "b719c11ff2d994c8d82c4284f43690f4db20f4770eaea3ecc2a096434116a831",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "d1fb763f0025ea30d5b5741899809e3bb41ee3ad09169d96cd230c0e29d3b7a2",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/architecture.md",
@@ -202,11 +220,12 @@
     },
     {
       "path": "docs/devlog.md",
-      "bytes": 120919,
-      "sha256": "96cd9006ae8fdace6dc3cba5600bef7d0325f4a2a23ffdeb4521f0a3c9b8da2d",
+      "bytes": 121396,
+      "sha256": "08d8b49a62619630665242f81c2b32644566e1ada193961940201310385814f5",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "f7a4a8339badaa24a0e2394193587713c084085e5efa0128ce95852e34b4ae55",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/evidence.md",
@@ -218,11 +237,12 @@
     },
     {
       "path": "docs/experiments.md",
-      "bytes": 4222,
-      "sha256": "e1f4ba18ed0453c6dcb222916e941a740c8e81c81234771eb0b1c69d27bed713",
+      "bytes": 4538,
+      "sha256": "e30f1536fae43b21946a19ab0340a0bae6d43042562cd73a0df75859b96abb02",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "f38cb2334627c3196327584576e6b9e0f05a3dcce03f6645e4b71b818514c341",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/fixed_evaluation.md",
@@ -242,11 +262,12 @@
     },
     {
       "path": "docs/gui.md",
-      "bytes": 2229,
-      "sha256": "075c2625b2e5c590ebeb450447a6f7d81b42f4db1573b1650c846f47a0601ca7",
+      "bytes": 2391,
+      "sha256": "691200f417a171e7e60052d95cc7967d4b84adc1605a206581e9590c22965beb",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "11081de2efe414af05c8dd3f55a014148d29203430def740b8aa8231a269dc77",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/learner_performance.md",
@@ -266,11 +287,12 @@
     },
     {
       "path": "docs/models.md",
-      "bytes": 4199,
-      "sha256": "2c5e0de9062bdadf9e4f736e8839b05ed142807a5f63882cfb9ac83030c7808c",
+      "bytes": 4536,
+      "sha256": "d6b4499aece8e8973c25ce83a94a14b6fe90355685c35c4639a5a11f53c7c2ba",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "c275f25c1dd006dfc28a17203ba3abf616e159cc48580af1ca7b2bde751f89d1",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/play.md",
@@ -282,11 +304,12 @@
     },
     {
       "path": "docs/publication.md",
-      "bytes": 1930,
-      "sha256": "ad4f4314ed90a13aeeb45e117a0241c261184f88d8c63f3706d83cffecef256f",
+      "bytes": 2208,
+      "sha256": "881ce4cf8496de823c49f38793ca7f2881a46d0795e847aadb7249630c3ea16d",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "233da5d3ad68aff0e65ebc09f6c55202783ac4e2ea1fce25f913ad935503af06",
-      "byte_identical_to_candidate": false
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "docs/research.md",
@@ -442,11 +465,12 @@
     },
     {
       "path": "pytest.ini",
-      "bytes": 44,
-      "sha256": "4d5193eb36807e4622451417a9fe7bea71e7307137cd05cc214332e514fd9527",
+      "bytes": 153,
+      "sha256": "824bf104544e18f330ad17c7e2de369ce8a6067c169921a259979f42861ffce5",
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "4d5193eb36807e4622451417a9fe7bea71e7307137cd05cc214332e514fd9527",
-      "byte_identical_to_candidate": true
+      "byte_identical_to_candidate": false,
+      "maintenance_basis": "post_release_quality_pass"
     },
     {
       "path": "requirements-linux.txt",
@@ -737,6 +761,12 @@
       "byte_identical_to_candidate": true
     },
     {
+      "path": "scripts/verify_public_integrity.py",
+      "bytes": 2795,
+      "sha256": "3bcea24a0db8dcf1fe5c528ae94c47ac7fd17e01de483544f698211cec51117b",
+      "origin": "post_release_quality_pass"
+    },
+    {
       "path": "scripts/verify_wsl_runtime.py",
       "bytes": 1514,
       "sha256": "ee3b6fb208f94076acb1d14502ce55893be92ee2b65a6184f9f977c1ac241b0a",
@@ -1015,6 +1045,12 @@
       "origin": "phase4_5_audited_candidate",
       "candidate_sha256": "b4546a077cb3d746b1ac37d9adadfc99caae600e4842331d90fbd6c3ef6ae9e9",
       "byte_identical_to_candidate": true
+    },
+    {
+      "path": "tests/conftest.py",
+      "bytes": 1511,
+      "sha256": "29543fa4d3618690b5200e224b114c4190c7f4e19f530d23f183c470d6f3d54b",
+      "origin": "post_release_quality_pass"
     },
     {
       "path": "tests/fixtures/oracle_pre_perf_v2/PROVENANCE.json",
@@ -1656,5 +1692,6 @@
       "candidate_sha256": "812a183a6971a8c6e3e1947950cf876b73b8865379f26e5151b20d4c2cdbcef6",
       "byte_identical_to_candidate": true
     }
-  ]
+  ],
+  "quality_pass_base_revision": "130f0020e020673adc66184d73be4306912a3f8c"
 }

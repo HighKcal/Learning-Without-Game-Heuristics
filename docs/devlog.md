@@ -2,6 +2,8 @@
 
 > 공개용 사본: 2026-10-14. 내부 원본은 별도 보존하며 Section 1~55·Takeaway·부록과 수치를 유지했다. 로컬 경로만 별칭으로 치환했다. E01~E36의 비공개 증거는 [근거 안내](evidence.md)에 출처 종류·해시·비공개 상태를 기록하며, 원본 파일을 제공하는 링크가 아니다. 역사적인 영문 제목은 원문의 식별을 위해 유지한다.
 
+> **공개 상태 안내 — 2026-10-14 추가**: 연구 소스와 Checkpoint 9개는 [research-v1.0.0](https://github.com/HighKcal/Learning-Without-Game-Heuristics/releases/tag/research-v1.0.0) 공개 완료. GUI/EXE는 미공개이며 연구 질문은 여전히 미해결이다. 아래 Current Status와 본문·부록은 작성 당시의 역사 기록으로 보존한다. 새 유지보수 검증은 [Quality Pass 보고서](POST_RELEASE_QUALITY_REPORT.md)에 분리한다.
+
 > **Current Status — 2026-10-13 기준**
 >
 > 원래 질문인 Decision의 안정적인 실행 가능성 학습은 해결됐다고 판정하지 않았다. Penalty/S1~S4의 부분 개선과 장기 실패, Oracle 조건의 전략 개선 및 후기 정체를 Section 35~50에 기록했다. Geometric Play fallback과 Oracle Witness는 외부 search를 사용하는 서로 다른 실행 정책이다.
